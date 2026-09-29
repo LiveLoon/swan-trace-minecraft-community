@@ -1,0 +1,212 @@
+# =====================================================================
+# Custom server-defined stats.
+#
+# Each entry below becomes a real stat with a key, display name, and
+# category. It appears in /stats, leaderboards, GUI menus, exports, and
+# the PlaceholderAPI expansion. Triggers map to Bukkit events.
+#
+# Supported triggers:
+#   block_break        materials: [STONE, OAK_LOG, ...]
+#   block_place        materials: [...]
+#   entity_kill        entities:  [ZOMBIE, ENDER_DRAGON, ...]
+#   player_kill        (no extra filter, fires when player kills another)
+#   player_death       (fires on death)
+#   player_login       worlds: [world_nether, ...]
+#   fish_caught        (fires on successful fish)
+#   item_pickup        materials: [DIAMOND, ...]
+#   item_drop          materials: [...]
+#   item_craft         materials: [PAPER, ...]   (filter is the recipe result)
+#   bed_enter          worlds: [...]
+#
+# Filters are OPTIONAL. Empty = match anything of that family.
+# 'amount' is how much to add per match (default 1).
+# =====================================================================
+
+stats:
+  # Track exactly how many netherite components a player has mined.
+  netherite_mined:
+    display: "Netherite Mined"
+    category: blocks
+    format: NUMBER
+    trigger: block_break
+    materials: [ANCIENT_DEBRIS]
+
+  diamond_mined:
+    display: "Diamonds Mined"
+    category: blocks
+    format: NUMBER
+    trigger: block_break
+    materials: [DIAMOND_ORE, DEEPSLATE_DIAMOND_ORE]
+
+  # Boss kills.
+  boss_kills:
+    display: "Boss Kills"
+    category: combat
+    trigger: entity_kill
+    entities: [ENDER_DRAGON, WITHER, WARDEN, ELDER_GUARDIAN]
+
+
+      # 绿宝石
+  emerald_mined:
+    display: "Emeralds Mined"
+    category: blocks
+    trigger: block_break
+    materials: [EMERALD_ORE, DEEPSLATE_EMERALD_ORE]
+
+  # 青金石
+  lapis_mined:
+    display: "Lapis Lazuli Mined"
+    category: blocks
+    trigger: block_break
+    materials: [LAPIS_ORE, DEEPSLATE_LAPIS_ORE]
+
+  # 红石
+  redstone_mined:
+    display: "Redstone Mined"
+    category: blocks
+    trigger: block_break
+    materials: [REDSTONE_ORE, DEEPSLATE_REDSTONE_ORE]
+
+  # 铁矿石（浅层和深层）
+  iron_mined:
+    display: "Iron Mined"
+    category: blocks
+    trigger: block_break
+    materials: [IRON_ORE, DEEPSLATE_IRON_ORE]
+
+  # 金矿石（含下界金矿）
+  gold_mined:
+    display: "Gold Mined"
+    category: blocks
+    trigger: block_break
+    materials: [GOLD_ORE, DEEPSLATE_GOLD_ORE, NETHER_GOLD_ORE]
+
+
+
+
+
+      # 单独统计末影龙
+  dragon_kills:
+    display: "Ender Dragons Slain"
+    category: combat
+    trigger: entity_kill
+    entities: [ENDER_DRAGON]
+
+  # 单独统计凋灵
+  wither_kills:
+    display: "Withers Slain"
+    category: combat
+    trigger: entity_kill
+    entities: [WITHER]
+
+  # 单独统计监守者
+  warden_kills:
+    display: "Wardens Slain"
+    category: combat
+    trigger: entity_kill
+    entities: [WARDEN]
+
+  # 1.21 旋风人（试炼密室）
+  breeze_kills:
+    display: "Breezes Slain"
+    category: combat
+    trigger: entity_kill
+    entities: [BREEZE]
+
+  # 1.21 沼泽骷髅
+  bogged_kills:
+    display: "Bogged Slain"
+    category: combat
+    trigger: entity_kill
+    entities: [BOGGED]
+
+
+  # 玩家击杀数（原版服务器刚需）
+  player_kills:
+    display: "Player Kills"
+    category: combat
+    trigger: player_kill
+
+  # 死亡次数
+  deaths:
+    display: "Deaths"
+    category: misc
+    trigger: player_death
+
+
+
+  # 下界访问次数
+  nether_visits:
+    display: "Nether Visits"
+    category: exploration
+    trigger: player_login
+    worlds: [world_nether]
+
+  # 末地访问次数（你原来注释掉了，这里保留为可用状态）
+  end_visits:
+    display: "End Visits"
+    category: exploration
+    trigger: player_login
+    worlds: [world_the_end]
+
+
+
+      # 合成下界合金锭（衡量毕业进度）
+  netherite_ingots_crafted:
+    display: "Netherite Ingots Crafted"
+    category: progression
+    trigger: item_craft
+    materials: [NETHERITE_INGOT]
+
+  # 合成附魔金苹果
+  god_apples_crafted:
+    display: "Enchanted Golden Apples Crafted"
+    category: progression
+    trigger: item_craft
+    materials: [ENCHANTED_GOLDEN_APPLE]
+
+  # 1.21 重锤（Mace）合成
+  maces_crafted:
+    display: "Maces Crafted"
+    category: progression
+    trigger: item_craft
+    materials: [MACE]
+
+
+
+
+  # 捡到鞘翅（往往代表探索结束城）
+  elytra_picked_up:
+    display: "Elytras Found"
+    category: exploration
+    trigger: item_pickup
+    materials: [ELYTRA]
+
+  # 1.21 试炼钥匙拾取（拿到的钥匙数量）
+  trial_keys_picked_up:
+    display: "Trial Keys Obtained"
+    category: interaction
+    trigger: item_pickup
+    materials: [TRIAL_KEY]
+
+  # 1.21 不祥试炼钥匙
+  ominous_trial_keys_picked_up:
+    display: "Ominous Trial Keys Obtained"
+    category: interaction
+    trigger: item_pickup
+    materials: [OMINOUS_TRIAL_KEY]
+
+
+
+  # 睡过的床（激活重生点次数）
+  beds_entered:
+    display: "Beds Entered"
+    category: misc
+    trigger: bed_enter
+
+
+  # Fish caught (no filter).
+  fish_caught:
+    display: "Fish Caught"
+    category: interaction
+    trigger: fish_caught

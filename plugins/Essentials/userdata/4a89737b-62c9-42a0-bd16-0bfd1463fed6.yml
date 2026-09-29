@@ -1,0 +1,31 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 172.18.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1789648479100
+  login: 1789648451426
+money: '1484.0'
+last-account-name: B_rimba
+logoutlocation:
+  world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
+  world-name: world
+  x: -566.9829939628897
+  y: 63.0
+  z: 1446.4814595551823
+  yaw: 113.55420684814453
+  pitch: 3.9363417625427246

@@ -1,0 +1,31 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 127.0.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1785538887519
+  login: 1785539509829
+money: '0'
+last-account-name: bot
+logoutlocation:
+  world: 3e7d642c-b41c-4135-84d1-e44f3613127e
+  world-name: world_the_end
+  x: 227.10862365303163
+  y: 50.0
+  z: -0.699999988079071
+  yaw: -4.00214958190918
+  pitch: 2.569450855255127

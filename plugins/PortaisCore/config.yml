@@ -1,0 +1,119 @@
+# ============================================================
+# PortaisCore - Sistema de Portais Personalizados
+# ============================================================
+
+configuracoes:
+  # Idioma das mensagens (pt_BR ou en_US)
+  idioma: pt_BR
+
+  # Ativar debug mode (mais logs no console)
+  debug: false
+
+  # Ferramenta usada para seleção de portais (GOLDEN_AXE, WOODEN_AXE, etc.)
+  ferramenta-selecao: GOLDEN_AXE
+
+  # Auto-save a cada X minutos (0 = desativado)
+  auto-save: 5
+
+  # Delay padrão antes do teleporte (em segundos, 0 = instantâneo)
+  delay-padrao: 3
+
+  # Cooldown padrão entre usos do mesmo portal (em segundos, 0 = sem cooldown)
+  cooldown-padrao: 0
+
+  # Raio de detecção do portal (em blocos, 1 = exato)
+  raio-deteccao: 1
+
+  # Verificar a cada X ticks se o jogador está no portal (20 ticks = 1 segundo)
+  tick-verificacao: 5
+
+partículas:
+  # Ativar partículas por padrão nos portais
+  ativadas: true
+
+  # Tipo de partícula padrão (PORTAL, END_ROD, FLAME, WITCH, etc.)
+  tipo: PORTAL
+
+  # Quantidade de partículas por ciclo
+  quantidade: 10
+
+  # Velocidade das partículas
+  velocidade: 0.1
+
+  # Intervalo de exibição de partículas (em ticks)
+  intervalo: 5
+
+sons:
+  # Ativar sons por padrão
+  ativados: true
+
+  # Som ao entrar no portal
+  som-entrada: ENTITY_ENDERMAN_TELEPORT
+
+  # Volume do som de entrada (0.0 - 1.0)
+  volume-entrada: 1.0
+
+  # Pitch do som de entrada
+  pitch-entrada: 1.0
+
+  # Som ao ser teleportado
+  som-teleporte: ENTITY_PLAYER_TELEPORT
+
+  # Volume do som de teleporte
+  volume-teleporte: 1.0
+
+  # Pitch do som de teleporte
+  pitch-teleporte: 1.0
+
+mensagens:
+  # Prefixo das mensagens do plugin
+  prefixo: "&8[&b&lPortaisCore&8]&r "
+
+  # Mensagem durante o delay de teleporte
+  contagem-regressiva: "&eTelepotando em &a{tempo} &esegundo(s)..."
+
+  # Mensagem ao ser teleportado
+  teleportado: "&aTeleportado para &e{destino}&a!"
+
+  # Mensagem de cooldown ativo
+  cooldown: "&cAguarde &e{tempo} &csegundo(s) para usar este portal novamente."
+
+  # Mensagem de permissão negada
+  sem-permissao: "&cVocê não tem permissão para usar este portal."
+
+  # Mensagem quando o portal não existe
+  portal-nao-existe: "&cPortal &e{nome} &cnão encontrado."
+
+  # Mensagem quando o portal é criado
+  portal-criado: "&aPortal &e{nome} &acriado com sucesso!"
+
+  # Mensagem quando o portal é deletado
+  portal-deletado: "&aPortal &e{nome} &adeletado com sucesso!"
+
+  # Mensagem de uso incorreto do comando
+  uso-incorreto: "&cUso incorreto! Use &e/portais ajuda &cpara ver os comandos."
+
+  # Mensagem ao cancelar teleporte por movimento
+  teleporte-cancelado: "&cTeleporte cancelado! Fique parado para ser teleportado."
+
+  # Mensagem ao selecionar posição 1
+  posicao1-selecionada: "&aPosição 1 selecionada! &7({x}, {y}, {z})"
+
+  # Mensagem ao selecionar posição 2
+  posicao2-selecionada: "&aPosição 2 selecionada! &7({x}, {y}, {z})"
+
+  # Mensagem de erro ao recarregar
+  reload-sucesso: "&aConfigurações recarregadas com sucesso!"
+
+  # Mensagem de mundo bloqueado
+  mundo-bloqueado: "&cVocê não pode usar este portal neste mundo."
+
+  # Mensagem de portal sem destino definido
+  sem-destino: "&cEste portal não tem destino configurado."
+
+  # Mensagem de título ao teleportar (deixe vazio para desativar)
+  titulo-teleporte: "&b&lPortal"
+  subtitulo-teleporte: "&7Teleportando para &e{destino}&7..."
+
+  # Mensagem de ActionBar durante contagem
+  actionbar-contagem: "&e⏱ &aTeleportando em &e{tempo}s..."

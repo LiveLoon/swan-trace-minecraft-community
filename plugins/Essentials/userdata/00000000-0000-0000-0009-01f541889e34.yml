@@ -1,0 +1,31 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 172.18.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1785659706478
+  login: 1785659238939
+money: '0'
+last-account-name: .Brehon8868
+logoutlocation:
+  world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
+  world-name: world
+  x: 198.68707
+  y: 86.5625
+  z: -29.92653
+  yaw: 25.704132080078125
+  pitch: 33.688232421875

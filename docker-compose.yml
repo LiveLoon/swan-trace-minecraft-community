@@ -1,0 +1,30 @@
+
+services:
+  minecraft-26.2:
+    build: .
+    container_name: just-minecraft-26.2
+    ports:
+      - "5005:22"
+      - "25265:25565"
+      - "27865:27865"
+      - "24454:24454/udp"
+      - "24454:24454/tcp"
+      - "19132:19132/udp"
+      - "34832:34832"
+      - "5006:3000"
+    volumes:
+      - .:/root
+    restart: always
+
+  just-mc-official-webside:
+    build:
+      context: .
+      dockerfile: Dockerfile.springboot
+    container_name: just-mc-official-webside
+    volumes:
+      - ./backups:/app/backups
+      - ./just-mc-server-1.0-SNAPSHOT.jar:/app/just-mc-server-1.0-SNAPSHOT.jar
+    ports:
+      - "2344:8080"   # 根据您的 Spring Boot 实际端口调整（默认 8080）
+    restart: always
+

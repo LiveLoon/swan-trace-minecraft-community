@@ -1,0 +1,1094 @@
+# =====================================================================
+# NexoraStatistics milestones.
+#
+# Each entry below fires a PlayerMilestoneEvent + runs reward commands
+# when a stat crosses the threshold. Two flavours:
+#
+#   - fixed:     threshold: N                 (fires once when stat hits N)
+#   - recurring: threshold: N, every: M       (fires every M after N)
+#
+# Placeholders inside rewards:
+#   %player%      - the player's current name
+#   %uuid%        - their UUID
+#   %threshold%   - the threshold that was crossed
+#   %stat%        - the stat key (e.g. blocks_broken)
+# =====================================================================
+
+milestones:
+  # ===== Playtime =====
+  play_starterI:
+    stat: playtime
+    threshold: 300
+    display: "Novice Player I"
+    message: "Play for 5 minutes"
+    broadcast: false
+    rewards: []
+  play_starterII:
+    stat: playtime
+    threshold: 900
+    display: "Novice Player II"
+    message: "Play for 15 minutes"
+    broadcast: false
+    rewards: []
+  play_starterIII:
+    stat: playtime
+    threshold: 1800
+    display: "Novice Player III"
+    message: "Play for 30 minutes"
+    broadcast: false
+    rewards: []
+  play_regularI:
+    stat: playtime
+    threshold: 3600
+    display: "Regular Player I"
+    message: "Play for 1 hour"
+    broadcast: false
+    rewards: []
+  play_regularII:
+    stat: playtime
+    threshold: 7200
+    display: "Regular Player II"
+    message: "Play for 2 hours"
+    broadcast: false
+    rewards: []
+  play_regularIII:
+    stat: playtime
+    threshold: 18000
+    display: "Regular Player III"
+    message: "Play for 5 hours"
+    broadcast: false
+    rewards: []
+  play_veteranI:
+    stat: playtime
+    threshold: 36000
+    display: "Veteran Player I"
+    message: "Play for 10 hours"
+    broadcast: false
+    rewards: []
+  play_veteranII:
+    stat: playtime
+    threshold: 86400
+    display: "Veteran Player II"
+    message: "Play for 24 hours"
+    broadcast: false
+    rewards: []
+  play_veteranIII:
+    stat: playtime
+    threshold: 180000
+    display: "Veteran Player III"
+    message: "Play for 50 hours"
+    broadcast: false
+    rewards: []
+  play_dedicatedI:
+    stat: playtime
+    threshold: 360000
+    display: "Dedicated Player I"
+    message: "Play for 100 hours"
+    broadcast: true
+    rewards: []
+  play_dedicatedII:
+    stat: playtime
+    threshold: 720000
+    display: "Dedicated Player II"
+    message: "Play for 200 hours"
+    broadcast: true
+    rewards: []
+  play_dedicatedIII:
+    stat: playtime
+    threshold: 1800000
+    display: "Dedicated Player III"
+    message: "Play for 500 hours"
+    broadcast: true
+    rewards: []
+  play_eliteI:
+    stat: playtime
+    threshold: 3600000
+    display: "Elite Player I"
+    message: "Play for 1,000 hours"
+    broadcast: true
+    rewards: []
+  play_eliteII:
+    stat: playtime
+    threshold: 5400000
+    display: "Elite Player II"
+    message: "Play for 1,500 hours"
+    broadcast: true
+    rewards: []
+  play_eliteIII:
+    stat: playtime
+    threshold: 7200000
+    display: "Elite Player III"
+    message: "Play for 2,000 hours"
+    broadcast: true
+    rewards: []
+  play_masterI:
+    stat: playtime
+    threshold: 8640000
+    display: "Master Player I"
+    message: "Play for 2,400 hours"
+    broadcast: true
+    rewards: []
+  play_masterII:
+    stat: playtime
+    threshold: 9720000
+    display: "Master Player II"
+    message: "Play for 2,700 hours"
+    broadcast: true
+    rewards: []
+  play_masterIII:
+    stat: playtime
+    threshold: 10440000
+    display: "Master Player III"
+    message: "Play for 2,900 hours"
+    broadcast: true
+    rewards: []
+  play_legendI:
+    stat: playtime
+    threshold: 10620000
+    display: "<gold>✦ Legend Player I ✦</gold>"
+    message: "Play for 2,950 hours"
+    broadcast: true
+    rewards: []
+  play_legendII:
+    stat: playtime
+    threshold: 10800000
+    display: "<gold><bold>✦ Legend Player II (Ultimate) ✦</bold></gold>"
+    message: "Play for 3,000 hours"
+    broadcast: true
+    rewards: []
+
+  # ===== Blocks Placed (Builder) =====
+  build_apprenticeI:
+    stat: blocks_placed
+    threshold: 10
+    display: "Apprentice Builder I"
+    message: "Place 10 blocks"
+    broadcast: false
+    rewards: []
+  build_apprenticeII:
+    stat: blocks_placed
+    threshold: 50
+    display: "Apprentice Builder II"
+    message: "Place 50 blocks"
+    broadcast: false
+    rewards: []
+  build_apprenticeIII:
+    stat: blocks_placed
+    threshold: 100
+    display: "Apprentice Builder III"
+    message: "Place 100 blocks"
+    broadcast: false
+    rewards: []
+  build_journeymanI:
+    stat: blocks_placed
+    threshold: 500
+    display: "Journeyman Builder I"
+    message: "Place 500 blocks"
+    broadcast: false
+    rewards: []
+  build_journeymanII:
+    stat: blocks_placed
+    threshold: 1000
+    display: "Journeyman Builder II"
+    message: "Place 1,000 blocks"
+    broadcast: false
+    rewards: []
+  build_journeymanIII:
+    stat: blocks_placed
+    threshold: 2500
+    display: "Journeyman Builder III"
+    message: "Place 2,500 blocks"
+    broadcast: false
+    rewards: []
+  build_artisanI:
+    stat: blocks_placed
+    threshold: 5000
+    display: "Artisan Builder I"
+    message: "Place 5,000 blocks"
+    broadcast: false
+    rewards: []
+  build_artisanII:
+    stat: blocks_placed
+    threshold: 10000
+    display: "Artisan Builder II"
+    message: "Place 10,000 blocks"
+    broadcast: false
+    rewards: []
+  build_artisanIII:
+    stat: blocks_placed
+    threshold: 20000
+    display: "Artisan Builder III"
+    message: "Place 20,000 blocks"
+    broadcast: false
+    rewards: []
+  build_foremanI:
+    stat: blocks_placed
+    threshold: 50000
+    display: "Foreman Builder I"
+    message: "Place 50,000 blocks"
+    broadcast: false
+    rewards: []
+  build_foremanII:
+    stat: blocks_placed
+    threshold: 100000
+    display: "Foreman Builder II"
+    message: "Place 100,000 blocks"
+    broadcast: true
+    rewards: []
+  build_foremanIII:
+    stat: blocks_placed
+    threshold: 200000
+    display: "Foreman Builder III"
+    message: "Place 200,000 blocks"
+    broadcast: true
+    rewards: []
+  build_architectI:
+    stat: blocks_placed
+    threshold: 500000
+    display: "Architect Builder I"
+    message: "Place 500,000 blocks"
+    broadcast: true
+    rewards: []
+  build_architectII:
+    stat: blocks_placed
+    threshold: 1000000
+    display: "Architect Builder II"
+    message: "Place 1,000,000 blocks"
+    broadcast: true
+    rewards: []
+  build_architectIII:
+    stat: blocks_placed
+    threshold: 2000000
+    display: "Architect Builder III"
+    message: "Place 2,000,000 blocks"
+    broadcast: true
+    rewards: []
+  build_seniorI:
+    stat: blocks_placed
+    threshold: 5000000
+    display: "Senior Architect Builder I"
+    message: "Place 5,000,000 blocks"
+    broadcast: true
+    rewards: []
+  build_seniorII:
+    stat: blocks_placed
+    threshold: 10000000
+    display: "Senior Architect Builder II"
+    message: "Place 10,000,000 blocks"
+    broadcast: true
+    rewards: []
+  build_seniorIII:
+    stat: blocks_placed
+    threshold: 15000000
+    display: "Senior Architect Builder III"
+    message: "Place 15,000,000 blocks"
+    broadcast: true
+    rewards: []
+  build_masterI:
+    stat: blocks_placed
+    threshold: 20000000
+    display: "<gold>✦ Master Builder I ✦</gold>"
+    message: "Place 20,000,000 blocks"
+    broadcast: true
+    rewards: []
+  build_masterII:
+    stat: blocks_placed
+    threshold: 30000000
+    display: "<gold><bold>✦ Master Builder II (Ultimate) ✦</bold></gold>"
+    message: "Place 30,000,000 blocks"
+    broadcast: true
+    rewards: []
+
+  # ===== Mob Kills =====
+  kill_noviceI:
+    stat: mob_kills
+    threshold: 10
+    display: "Novice Killer I"
+    message: "Kill 10 mobs"
+    broadcast: false
+    rewards: []
+  kill_noviceII:
+    stat: mob_kills
+    threshold: 50
+    display: "Novice Killer II"
+    message: "Kill 50 mobs"
+    broadcast: false
+    rewards: []
+  kill_noviceIII:
+    stat: mob_kills
+    threshold: 100
+    display: "Novice Killer III"
+    message: "Kill 100 mobs"
+    broadcast: false
+    rewards: []
+  kill_warriorI:
+    stat: mob_kills
+    threshold: 250
+    display: "Warrior Killer I"
+    message: "Kill 250 mobs"
+    broadcast: false
+    rewards: []
+  kill_warriorII:
+    stat: mob_kills
+    threshold: 500
+    display: "Warrior Killer II"
+    message: "Kill 500 mobs"
+    broadcast: false
+    rewards: []
+  kill_warriorIII:
+    stat: mob_kills
+    threshold: 1000
+    display: "Warrior Killer III"
+    message: "Kill 1,000 mobs"
+    broadcast: false
+    rewards: []
+  kill_veteranI:
+    stat: mob_kills
+    threshold: 2500
+    display: "Veteran Killer I"
+    message: "Kill 2,500 mobs"
+    broadcast: false
+    rewards: []
+  kill_veteranII:
+    stat: mob_kills
+    threshold: 5000
+    display: "Veteran Killer II"
+    message: "Kill 5,000 mobs"
+    broadcast: false
+    rewards: []
+  kill_veteranIII:
+    stat: mob_kills
+    threshold: 10000
+    display: "Veteran Killer III"
+    message: "Kill 10,000 mobs"
+    broadcast: true
+    rewards: []
+  kill_slayerI:
+    stat: mob_kills
+    threshold: 25000
+    display: "Slayer Killer I"
+    message: "Kill 25,000 mobs"
+    broadcast: true
+    rewards: []
+  kill_slayerII:
+    stat: mob_kills
+    threshold: 50000
+    display: "Slayer Killer II"
+    message: "Kill 50,000 mobs"
+    broadcast: true
+    rewards: []
+  kill_slayerIII:
+    stat: mob_kills
+    threshold: 100000
+    display: "Slayer Killer III"
+    message: "Kill 100,000 mobs"
+    broadcast: true
+    rewards: []
+  kill_championI:
+    stat: mob_kills
+    threshold: 150000
+    display: "Champion Killer I"
+    message: "Kill 150,000 mobs"
+    broadcast: true
+    rewards: []
+  kill_championII:
+    stat: mob_kills
+    threshold: 200000
+    display: "Champion Killer II"
+    message: "Kill 200,000 mobs"
+    broadcast: true
+    rewards: []
+  kill_championIII:
+    stat: mob_kills
+    threshold: 250000
+    display: "Champion Killer III"
+    message: "Kill 250,000 mobs"
+    broadcast: true
+    rewards: []
+  kill_heroI:
+    stat: mob_kills
+    threshold: 300000
+    display: "Hero Killer I"
+    message: "Kill 300,000 mobs"
+    broadcast: true
+    rewards: []
+  kill_heroII:
+    stat: mob_kills
+    threshold: 350000
+    display: "Hero Killer II"
+    message: "Kill 350,000 mobs"
+    broadcast: true
+    rewards: []
+  kill_heroIII:
+    stat: mob_kills
+    threshold: 400000
+    display: "Hero Killer III"
+    message: "Kill 400,000 mobs"
+    broadcast: true
+    rewards: []
+  kill_legendI:
+    stat: mob_kills
+    threshold: 450000
+    display: "<gold>✦ Legend Killer I ✦</gold>"
+    message: "Kill 450,000 mobs"
+    broadcast: true
+    rewards: []
+  kill_legendII:
+    stat: mob_kills
+    threshold: 500000
+    display: "<gold><bold>✦ Legend Killer II (Ultimate) ✦</bold></gold>"
+    message: "Kill 500,000 mobs"
+    broadcast: true
+    rewards: []
+
+  # ===== Player Kills (PvP) =====
+  pvp_noviceI:
+    stat: player_kills
+    threshold: 1
+    display: "PvP Novice I"
+    message: "Kill 1 player"
+    broadcast: false
+    rewards: []
+  pvp_noviceII:
+    stat: player_kills
+    threshold: 5
+    display: "PvP Novice II"
+    message: "Kill 5 players"
+    broadcast: false
+    rewards: []
+  pvp_noviceIII:
+    stat: player_kills
+    threshold: 10
+    display: "PvP Novice III"
+    message: "Kill 10 players"
+    broadcast: false
+    rewards: []
+  pvp_duelistI:
+    stat: player_kills
+    threshold: 25
+    display: "PvP Duelist I"
+    message: "Kill 25 players"
+    broadcast: false
+    rewards: []
+  pvp_duelistII:
+    stat: player_kills
+    threshold: 50
+    display: "PvP Duelist II"
+    message: "Kill 50 players"
+    broadcast: false
+    rewards: []
+  pvp_duelistIII:
+    stat: player_kills
+    threshold: 100
+    display: "PvP Duelist III"
+    message: "Kill 100 players"
+    broadcast: true
+    rewards: []
+  pvp_berserkerI:
+    stat: player_kills
+    threshold: 250
+    display: "PvP Berserker I"
+    message: "Kill 250 players"
+    broadcast: true
+    rewards: []
+  pvp_berserkerII:
+    stat: player_kills
+    threshold: 500
+    display: "PvP Berserker II"
+    message: "Kill 500 players"
+    broadcast: true
+    rewards: []
+  pvp_berserkerIII:
+    stat: player_kills
+    threshold: 1000
+    display: "PvP Berserker III"
+    message: "Kill 1,000 players"
+    broadcast: true
+    rewards: []
+  pvp_gladiatorI:
+    stat: player_kills
+    threshold: 1500
+    display: "PvP Gladiator I"
+    message: "Kill 1,500 players"
+    broadcast: true
+    rewards: []
+  pvp_gladiatorII:
+    stat: player_kills
+    threshold: 2000
+    display: "PvP Gladiator II"
+    message: "Kill 2,000 players"
+    broadcast: true
+    rewards: []
+  pvp_gladiatorIII:
+    stat: player_kills
+    threshold: 2500
+    display: "PvP Gladiator III"
+    message: "Kill 2,500 players"
+    broadcast: true
+    rewards: []
+  pvp_warlordI:
+    stat: player_kills
+    threshold: 3000
+    display: "PvP Warlord I"
+    message: "Kill 3,000 players"
+    broadcast: true
+    rewards: []
+  pvp_warlordII:
+    stat: player_kills
+    threshold: 4000
+    display: "PvP Warlord II"
+    message: "Kill 4,000 players"
+    broadcast: true
+    rewards: []
+  pvp_warlordIII:
+    stat: player_kills
+    threshold: 5000
+    display: "PvP Warlord III"
+    message: "Kill 5,000 players"
+    broadcast: true
+    rewards: []
+  pvp_assassinI:
+    stat: player_kills
+    threshold: 6000
+    display: "PvP Assassin I"
+    message: "Kill 6,000 players"
+    broadcast: true
+    rewards: []
+  pvp_assassinII:
+    stat: player_kills
+    threshold: 7000
+    display: "PvP Assassin II"
+    message: "Kill 7,000 players"
+    broadcast: true
+    rewards: []
+  pvp_assassinIII:
+    stat: player_kills
+    threshold: 8000
+    display: "PvP Assassin III"
+    message: "Kill 8,000 players"
+    broadcast: true
+    rewards: []
+  pvp_godlikeI:
+    stat: player_kills
+    threshold: 9000
+    display: "<gold>✦ PvP Godlike I ✦</gold>"
+    message: "Kill 9,000 players"
+    broadcast: true
+    rewards: []
+  pvp_godlikeII:
+    stat: player_kills
+    threshold: 10000
+    display: "<gold><bold>✦ PvP Godlike II (Ultimate) ✦</bold></gold>"
+    message: "Kill 10,000 players"
+    broadcast: true
+    rewards: []
+
+  # ===== Distance Walked =====
+  dist_noviceI:
+    stat: distance_total
+    threshold: 10000
+    display: "Distance Novice I"
+    message: "Walk 100 meters"
+    broadcast: false
+    rewards: []
+  dist_noviceII:
+    stat: distance_total
+    threshold: 50000
+    display: "Distance Novice II"
+    message: "Walk 500 meters"
+    broadcast: false
+    rewards: []
+  dist_noviceIII:
+    stat: distance_total
+    threshold: 100000
+    display: "Distance Novice III"
+    message: "Walk 1 kilometer"
+    broadcast: false
+    rewards: []
+  dist_explorerI:
+    stat: distance_total
+    threshold: 250000
+    display: "Distance Explorer I"
+    message: "Walk 2.5 kilometers"
+    broadcast: false
+    rewards: []
+  dist_explorerII:
+    stat: distance_total
+    threshold: 500000
+    display: "Distance Explorer II"
+    message: "Walk 5 kilometers"
+    broadcast: false
+    rewards: []
+  dist_explorerIII:
+    stat: distance_total
+    threshold: 1000000
+    display: "Distance Explorer III"
+    message: "Walk 10 kilometers"
+    broadcast: false
+    rewards: []
+  dist_wandererI:
+    stat: distance_total
+    threshold: 2500000
+    display: "Distance Wanderer I"
+    message: "Walk 25 kilometers"
+    broadcast: false
+    rewards: []
+  dist_wandererII:
+    stat: distance_total
+    threshold: 5000000
+    display: "Distance Wanderer II"
+    message: "Walk 50 kilometers"
+    broadcast: false
+    rewards: []
+  dist_wandererIII:
+    stat: distance_total
+    threshold: 10000000
+    display: "Distance Wanderer III"
+    message: "Walk 100 kilometers"
+    broadcast: true
+    rewards: []
+  dist_pathfinderI:
+    stat: distance_total
+    threshold: 25000000
+    display: "Distance Pathfinder I"
+    message: "Walk 250 kilometers"
+    broadcast: true
+    rewards: []
+  dist_pathfinderII:
+    stat: distance_total
+    threshold: 50000000
+    display: "Distance Pathfinder II"
+    message: "Walk 500 kilometers"
+    broadcast: true
+    rewards: []
+  dist_pathfinderIII:
+    stat: distance_total
+    threshold: 100000000
+    display: "Distance Pathfinder III"
+    message: "Walk 1,000 kilometers"
+    broadcast: true
+    rewards: []
+  dist_surveyorI:
+    stat: distance_total
+    threshold: 250000000
+    display: "Distance Surveyor I"
+    message: "Walk 2,500 kilometers"
+    broadcast: true
+    rewards: []
+  dist_surveyorII:
+    stat: distance_total
+    threshold: 500000000
+    display: "Distance Surveyor II"
+    message: "Walk 5,000 kilometers"
+    broadcast: true
+    rewards: []
+  dist_surveyorIII:
+    stat: distance_total
+    threshold: 1000000000
+    display: "Distance Surveyor III"
+    message: "Walk 10,000 kilometers"
+    broadcast: true
+    rewards: []
+  dist_voyagerI:
+    stat: distance_total
+    threshold: 1500000000
+    display: "Distance Voyager I"
+    message: "Walk 15,000 kilometers"
+    broadcast: true
+    rewards: []
+  dist_voyagerII:
+    stat: distance_total
+    threshold: 2000000000
+    display: "Distance Voyager II"
+    message: "Walk 20,000 kilometers"
+    broadcast: true
+    rewards: []
+  dist_voyagerIII:
+    stat: distance_total
+    threshold: 3000000000
+    display: "Distance Voyager III"
+    message: "Walk 30,000 kilometers"
+    broadcast: true
+    rewards: []
+  dist_legendI:
+    stat: distance_total
+    threshold: 4000000000
+    display: "<gold>✦ Distance Legendary Trekker I ✦</gold>"
+    message: "Walk 40,000 kilometers"
+    broadcast: true
+    rewards: []
+  dist_legendII:
+    stat: distance_total
+    threshold: 5000000000
+    display: "<gold><bold>✦ Distance Legendary Trekker II (Ultimate) ✦</bold></gold>"
+    message: "Walk 50,000 kilometers"
+    broadcast: true
+    rewards: []
+
+  # ===== Diamond Mined =====
+  diamond_noviceI:
+    stat: diamond_mined
+    threshold: 1
+    display: "Diamond Novice I"
+    message: "Mine 1 diamond"
+    broadcast: false
+    rewards: []
+  diamond_noviceII:
+    stat: diamond_mined
+    threshold: 5
+    display: "Diamond Novice II"
+    message: "Mine 5 diamonds"
+    broadcast: false
+    rewards: []
+  diamond_noviceIII:
+    stat: diamond_mined
+    threshold: 10
+    display: "Diamond Novice III"
+    message: "Mine 10 diamonds"
+    broadcast: false
+    rewards: []
+  diamond_minerI:
+    stat: diamond_mined
+    threshold: 25
+    display: "Diamond Discoverer I"
+    message: "Mine 25 diamonds"
+    broadcast: false
+    rewards: []
+  diamond_minerII:
+    stat: diamond_mined
+    threshold: 50
+    display: "Diamond Discoverer II"
+    message: "Mine 50 diamonds"
+    broadcast: false
+    rewards: []
+  diamond_minerIII:
+    stat: diamond_mined
+    threshold: 100
+    display: "Diamond Discoverer III"
+    message: "Mine 100 diamonds"
+    broadcast: true
+    rewards: []
+  diamond_expertI:
+    stat: diamond_mined
+    threshold: 250
+    display: "Diamond Expert I"
+    message: "Mine 250 diamonds"
+    broadcast: true
+    rewards: []
+  diamond_expertII:
+    stat: diamond_mined
+    threshold: 500
+    display: "Diamond Expert II"
+    message: "Mine 500 diamonds"
+    broadcast: true
+    rewards: []
+  diamond_expertIII:
+    stat: diamond_mined
+    threshold: 1000
+    display: "Diamond Expert III"
+    message: "Mine 1,000 diamonds"
+    broadcast: true
+    rewards: []
+  diamond_lordI:
+    stat: diamond_mined
+    threshold: 1500
+    display: "Diamond Lord I"
+    message: "Mine 1,500 diamonds"
+    broadcast: true
+    rewards: []
+  diamond_lordII:
+    stat: diamond_mined
+    threshold: 2000
+    display: "Diamond Lord II"
+    message: "Mine 2,000 diamonds"
+    broadcast: true
+    rewards: []
+  diamond_lordIII:
+    stat: diamond_mined
+    threshold: 2500
+    display: "Diamond Lord III"
+    message: "Mine 2,500 diamonds"
+    broadcast: true
+    rewards: []
+  diamond_magnateI:
+    stat: diamond_mined
+    threshold: 3000
+    display: "Diamond Magnate I"
+    message: "Mine 3,000 diamonds"
+    broadcast: true
+    rewards: []
+  diamond_magnateII:
+    stat: diamond_mined
+    threshold: 3500
+    display: "Diamond Magnate II"
+    message: "Mine 3,500 diamonds"
+    broadcast: true
+    rewards: []
+  diamond_magnateIII:
+    stat: diamond_mined
+    threshold: 4000
+    display: "Diamond Magnate III"
+    message: "Mine 4,000 diamonds"
+    broadcast: true
+    rewards: []
+  diamond_baronI:
+    stat: diamond_mined
+    threshold: 4200
+    display: "Diamond Baron I"
+    message: "Mine 4,200 diamonds"
+    broadcast: true
+    rewards: []
+  diamond_baronII:
+    stat: diamond_mined
+    threshold: 4500
+    display: "Diamond Baron II"
+    message: "Mine 4,500 diamonds"
+    broadcast: true
+    rewards: []
+  diamond_baronIII:
+    stat: diamond_mined
+    threshold: 4800
+    display: "Diamond Baron III"
+    message: "Mine 4,800 diamonds"
+    broadcast: true
+    rewards: []
+  diamond_emperorI:
+    stat: diamond_mined
+    threshold: 4900
+    display: "<gold>✦ Diamond Emperor I ✦</gold>"
+    message: "Mine 4,900 diamonds"
+    broadcast: true
+    rewards: []
+  diamond_emperorII:
+    stat: diamond_mined
+    threshold: 5000
+    display: "<gold><bold>✦ Diamond Emperor II (Ultimate) ✦</bold></gold>"
+    message: "Mine 5,000 diamonds"
+    broadcast: true
+    rewards: []
+
+  # ===== Blocks Broken (Miner) =====
+  miner_bronze:
+    stat: blocks_broken
+    threshold: 1000
+    display: "<gray>Bronze Miner I</gray>"
+    message: "Break 1,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_bronzeII:
+    stat: blocks_broken
+    threshold: 2500
+    display: "<gray>Bronze Miner II</gray>"
+    message: "Break 2,500 blocks"
+    broadcast: false
+    rewards: []
+  miner_silver:
+    stat: blocks_broken
+    threshold: 5000
+    display: "<white>Silver Miner I</white>"
+    message: "Break 5,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_silverII:
+    stat: blocks_broken
+    threshold: 10000
+    display: "<white>Silver Miner II</white>"
+    message: "Break 10,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_gold:
+    stat: blocks_broken
+    threshold: 25000
+    display: "<gold>Gold Miner I</gold>"
+    message: "Break 25,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_goldII:
+    stat: blocks_broken
+    threshold: 50000
+    display: "<gold>Gold Miner II</gold>"
+    message: "Break 50,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_goldIII:
+    stat: blocks_broken
+    threshold: 75000
+    display: "<gold>Gold Miner III</gold>"
+    message: "Break 75,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_platinum:
+    stat: blocks_broken
+    threshold: 100000
+    display: "<aqua>Platinum Miner I</aqua>"
+    message: "Break 100,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_platinumII:
+    stat: blocks_broken
+    threshold: 150000
+    display: "<aqua>Platinum Miner II</aqua>"
+    message: "Break 150,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_platinumIII:
+    stat: blocks_broken
+    threshold: 200000
+    display: "<aqua>Platinum Miner III</aqua>"
+    message: "Break 200,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_diamond:
+    stat: blocks_broken
+    threshold: 300000
+    display: "<dark_aqua>Diamond Miner I</dark_aqua>"
+    message: "Break 300,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_diamondII:
+    stat: blocks_broken
+    threshold: 400000
+    display: "<dark_aqua>Diamond Miner II</dark_aqua>"
+    message: "Break 400,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_diamondIII:
+    stat: blocks_broken
+    threshold: 500000
+    display: "<dark_aqua>Diamond Miner III</dark_aqua>"
+    message: "Break 500,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_master:
+    stat: blocks_broken
+    threshold: 750000
+    display: "<dark_purple>Master Miner I</dark_purple>"
+    message: "Break 750,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_masterII:
+    stat: blocks_broken
+    threshold: 1000000
+    display: "<dark_purple>Master Miner II</dark_purple>"
+    message: "Break 1,000,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_masterIII:
+    stat: blocks_broken
+    threshold: 1250000
+    display: "<dark_purple>Master Miner III</dark_purple>"
+    message: "Break 1,250,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_masterIV:
+    stat: blocks_broken
+    threshold: 1500000
+    display: "<dark_purple>Master Miner IV</dark_purple>"
+    message: "Break 1,500,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_legend:
+    stat: blocks_broken
+    threshold: 2000000
+    display: "<red>Legend Miner I</red>"
+    message: "Break 2,000,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_legendII:
+    stat: blocks_broken
+    threshold: 2500000
+    display: "<red>Legend Miner II</red>"
+    message: "Break 2,500,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_legendIII:
+    stat: blocks_broken
+    threshold: 3000000
+    display: "<red>Legend Miner III</red>"
+    message: "Break 3,000,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_legendIV:
+    stat: blocks_broken
+    threshold: 3500000
+    display: "<red>Legend Miner IV</red>"
+    message: "Break 3,500,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_epic:
+    stat: blocks_broken
+    threshold: 4000000
+    display: "<light_purple>Epic Miner I</light_purple>"
+    message: "Break 4,000,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_epicII:
+    stat: blocks_broken
+    threshold: 4500000
+    display: "<light_purple>Epic Miner II</light_purple>"
+    message: "Break 4,500,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_epicIII:
+    stat: blocks_broken
+    threshold: 5000000
+    display: "<light_purple>Epic Miner III</light_purple>"
+    message: "Break 5,000,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_mythic:
+    stat: blocks_broken
+    threshold: 6000000
+    display: "<yellow>Mythic Miner I</yellow>"
+    message: "Break 6,000,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_mythicII:
+    stat: blocks_broken
+    threshold: 7000000
+    display: "<yellow>Mythic Miner II</yellow>"
+    message: "Break 7,000,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_mythicIII:
+    stat: blocks_broken
+    threshold: 8000000
+    display: "<yellow>Mythic Miner III</yellow>"
+    message: "Break 8,000,000 blocks"
+    broadcast: false
+    rewards: []
+  miner_transcendent:
+    stat: blocks_broken
+    threshold: 8500000
+    display: "<dark_red>✦ Transcendent Miner I ✦</dark_red>"
+    message: "Break 8,500,000 blocks"
+    broadcast: true
+    rewards: []
+  miner_transcendentII:
+    stat: blocks_broken
+    threshold: 9000000
+    display: "<dark_red>✦ Transcendent Miner II ✦</dark_red>"
+    message: "Break 9,000,000 blocks"
+    broadcast: true
+    rewards: []
+  miner_transcendentIII:
+    stat: blocks_broken
+    threshold: 9500000
+    display: "<dark_red>✦ Transcendent Miner III ✦</dark_red>"
+    message: "Break 9,500,000 blocks"
+    broadcast: true
+    rewards: []
+  miner_transcendentIV:
+    stat: blocks_broken
+    threshold: 10000000
+    display: "<dark_red>✦ Transcendent Miner IV ✦</dark_red>"
+    message: "Break 10,000,000 blocks"
+    broadcast: true
+    rewards: []
+  miner_transcendentV:
+    stat: blocks_broken
+    threshold: 12000000
+    display: "<dark_red><bold>✦ Transcendent Miner V (Ultimate) ✦</bold></dark_red>"
+    message: "Break 12,000,000 blocks"
+    broadcast: true
+    rewards: []

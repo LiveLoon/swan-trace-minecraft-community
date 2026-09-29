@@ -1,0 +1,34 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 172.18.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1790053503719
+  login: 1790052789062
+money: '12179.0'
+last-account-name: LilacSmirr
+logoutlocation:
+  world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
+  world-name: world
+  x: -650.51
+  y: 63.0
+  z: 7950.76
+  yaw: 0.10000000149011612
+  pitch: -4.800000190734863
+past-usernames:
+- LilacSwirr
+- Linaizhi

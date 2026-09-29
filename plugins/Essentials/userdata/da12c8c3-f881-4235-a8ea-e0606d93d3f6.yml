@@ -1,0 +1,31 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 172.18.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1784993877574
+  login: 1784991660749
+money: '0'
+last-account-name: carbocysteine
+logoutlocation:
+  world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
+  world-name: world
+  x: -2181.486887487068
+  y: 97.0
+  z: 121.48655774475093
+  yaw: 97.07454681396484
+  pitch: -89.99998474121094

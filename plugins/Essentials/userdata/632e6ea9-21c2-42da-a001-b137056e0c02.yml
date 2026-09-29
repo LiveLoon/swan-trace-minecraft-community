@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 172.18.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1787386377478
+  login: 1787386022622
+money: '0'
+last-account-name: LanHaiai
+lastlocation:
+  world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
+  world-name: world
+  x: -7.5
+  y: 63.0
+  z: 3.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
+  world-name: world
+  x: -13.765270690888649
+  y: 81.0
+  z: 318.9631320023456
+  yaw: -1.4989013671875
+  pitch: 15.600011825561523

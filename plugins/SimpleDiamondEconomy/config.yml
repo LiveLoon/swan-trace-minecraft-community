@@ -1,0 +1,5 @@
+sidebar-enabled: true
+sidebar-update-ticks: 10 # in ticks
+items:
+  diamond: 1000
+  diamond_block: 9000

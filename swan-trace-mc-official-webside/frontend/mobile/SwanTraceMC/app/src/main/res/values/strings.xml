@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">SwanTraceMC</string>
+
+
+    <!-- Stats Page -->
+    <string name="stats_category_list">统计分类列表</string>
+    <string name="current_stat">当前统计：%1$s</string>
+    <string name="open_stats_category">打开统计分类</string>
+    <string name="no_stat_data">暂无该统计数据</string>
+    <string name="stats_unknown">未知统计</string>
+
+    <!-- Statistics -->
+    <string name="stats_playtime">游戏时间</string>
+    <string name="stats_blocks_broken">破坏方块</string>
+    <string name="stats_blocks_placed">放置方块</string>
+    <string name="stats_mob_kills">击杀生物</string>
+    <string name="stats_player_kills">击杀玩家</string>
+    <string name="stats_deaths">死亡次数</string>
+    <string name="stats_damage_dealt">造成伤害</string>
+    <string name="stats_damage_taken">受到伤害</string>
+    <string name="stats_distance_walked">步行距离</string>
+    <string name="stats_distance_sprinted">疾跑距离</string>
+    <string name="stats_distance_swam">游泳距离</string>
+    <string name="stats_distance_flown">飞行距离</string>
+    <string name="stats_distance_total">总移动距离</string>
+    <string name="stats_items_crafted">制作物品</string>
+    <string name="stats_items_dropped">丢弃物品</string>
+    <string name="stats_items_picked_up">拾取物品</string>
+    <string name="stats_chests_opened">打开箱子</string>
+    <string name="stats_beds_slept_in">睡过的床</string>
+    <string name="stats_xp_earned">获得经验</string>
+    <string name="stats_levels_gained">获得等级</string>
+    <string name="stats_money_earned">赚取金币</string>
+    <string name="stats_money_spent">消费金币</string>
+    <string name="stats_money_balance">余额</string>
+    <string name="stats_netherite_mined">挖掘下界合金</string>
+    <string name="stats_diamond_mined">挖掘钻石</string>
+    <string name="stats_boss_kills">击杀 Boss</string>
+    <string name="stats_emerald_mined">挖掘绿宝石</string>
+    <string name="stats_lapis_mined">挖掘青金石</string>
+    <string name="stats_redstone_mined">挖掘红石</string>
+    <string name="stats_iron_mined">挖掘铁</string>
+    <string name="stats_gold_mined">挖掘金</string>
+    <string name="stats_dragon_kills">击杀末影龙</string>
+    <string name="stats_wither_kills">击杀凋灵</string>
+    <string name="stats_warden_kills">击杀监守者</string>
+    <string name="stats_breeze_kills">击杀旋风人</string>
+    <string name="stats_bogged_kills">击杀沼骸</string>
+    <string name="stats_nether_visits">进入下界次数</string>
+    <string name="stats_end_visits">进入末地次数</string>
+    <string name="stats_netherite_ingots_crafted">制作下界合金锭</string>
+    <string name="stats_god_apples_crafted">制作附魔金苹果</string>
+    <string name="stats_maces_crafted">制作重锤</string>
+    <string name="stats_elytra_picked_up">找到鞘翅</string>
+    <string name="stats_trial_keys_picked_up">获得试炼钥匙</string>
+    <string name="stats_ominous_trial_keys_picked_up">获得不祥试炼钥匙</string>
+    <string name="stats_beds_entered">进入床</string>
+    <string name="stats_fish_caught">捕获鱼</string>
+
+    </resources>

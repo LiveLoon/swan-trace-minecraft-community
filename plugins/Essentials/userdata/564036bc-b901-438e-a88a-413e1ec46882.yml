@@ -1,0 +1,33 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 172.18.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1790090821334
+  login: 1790089812797
+money: '65970.0'
+last-account-name: block_ser
+logoutlocation:
+  world: 349fd65d-d066-4732-9242-170e713d7f9d
+  world-name: world_nether
+  x: 1236.8286114115913
+  y: 222.9985257813851
+  z: 232.57276973350542
+  yaw: -16.810585021972656
+  pitch: 42.9001350402832
+past-usernames:
+- beafg

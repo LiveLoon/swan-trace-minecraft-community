@@ -1,0 +1,20 @@
+FROM archlinux:latest
+
+WORKDIR /app
+
+# 配置 Pacman 镜像源（使用国内源，您已有的镜像列表可以照搬）
+RUN echo -e "Server = https://mirrors.ustc.edu.cn/archlinux/\$repo/os/\$arch\nServer = https://mirrors.tuna.tsinghua.edu.cn/archlinux/\$repo/os/\$arch\nServer = https://mirror.rackspace.com/archlinux/\$repo/os/\$arch" > /etc/pacman.d/mirrorlist
+
+# 安装 JDK 17（Spring Boot 2.x/3.x 通常需要 JDK 17，您也可以保留 jdk26-openjdk 但更推荐 LTS 版本）
+RUN pacman -Sy --noconfirm && \
+    pacman -S --noconfirm jdk17-openjdk && \
+    pacman -Scc --noconfirm
+
+# 复制 jar 包到容器
+COPY just-mc-server-1.0-SNAPSHOT.jar just-mc-server-1.0-SNAPSHOT.jar
+
+# 暴露 Spring Boot 默认端口
+EXPOSE 2344
+
+# 启动命令
+CMD ["java", "-jar", "just-mc-server-1.0-SNAPSHOT.jar"]

@@ -1,0 +1,13 @@
+# =====================================================================
+# Default achievement definitions. Each achievement is unlocked when a
+# player's stat reaches the configured threshold. Add/remove freely.
+#
+#   id:
+#     display: human-readable name
+#     description: short blurb shown when unlocked
+#     stat: stat key (must match a registered StatDefinition)
+#     threshold: integer value at which the achievement fires
+#     broadcast: if true, the unlock is announced server-wide
+#     rewards:
+#       - "command with %player% placeholder"
+# =====================================================================

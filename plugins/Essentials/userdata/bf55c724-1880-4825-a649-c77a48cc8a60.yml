@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 172.18.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1787755037901
+  login: 1787751498591
+money: '0'
+last-account-name: meimeidu
+lastlocation:
+  world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
+  world-name: world
+  x: 9.5
+  y: 66.0
+  z: 8.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
+  world-name: world
+  x: -2147.0907757131768
+  y: 66.0
+  z: 1460.42120312046
+  yaw: 97.89581298828125
+  pitch: -14.700675010681152

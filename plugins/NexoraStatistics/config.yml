@@ -1,0 +1,198 @@
+# =====================================================================
+# NexoraStatistics configuration
+# Comprehensive player statistics tracking by Nexora Labs.
+# =====================================================================
+
+database:
+  # sqlite (default, file-based) or mysql
+  type: sqlite
+  # Used by sqlite only. Path is relative to the plugin's data folder.
+  file: nexorastats.db
+  # MySQL / MariaDB connection (ignored when type is sqlite).
+  mysql:
+    host: localhost
+    port: 3306
+    database: nexorastats
+    username: root
+    password: ''
+    properties: useSSL=false&useUnicode=true&characterEncoding=utf8
+    pool-size: 8
+  # In-memory cache settings.
+  cache:
+    max-offline-players: 500
+    flush-interval-seconds: 300
+
+# What to track. Disable categories you don't need to save event-handler cost.
+tracking:
+  time: true
+  blocks: true
+  combat: true
+  movement: true
+  interaction: true
+  progression: true
+
+# Per-category options.
+options:
+  movement:
+    batch-flush-ticks: 10
+    by-mode: true
+  blocks:
+    per-material: true
+  combat:
+    per-mob-type: true
+
+# /stats command behaviour.
+commands:
+  stats:
+    gui: true
+    show-rank: true
+
+# Leaderboards.
+leaderboards:
+  refresh-seconds: 60
+  top-limit: 10
+
+# PlaceholderAPI integration.
+placeholders:
+  enabled: true
+
+# Time-period tracking (daily, weekly, monthly).
+periods:
+  timezone: UTC
+
+# Vault economy integration.
+economy:
+  poll-seconds: 60
+
+# Per-world stat tracking.
+worlds:
+  track: true
+  flush-interval-seconds: 300
+
+# Hourly snapshots powering /stats history.
+history:
+  snapshot-seconds: 3600
+  retention-days: 30
+
+# -----------------------------------------------------------------
+# Welcome message on join.
+# -----------------------------------------------------------------
+welcome:
+  # The headline stat shown in the "you've racked up X of Y" greeting.
+  headline-stat: playtime
+  # Up to three of these are shown as rows underneath the headline.
+  highlight-stats:
+  - blocks_broken
+  - mob_kills
+  - distance_total
+  - diamond_mined
+
+# -----------------------------------------------------------------
+# Display modules: in-game sidebar + tab-list rank chip.
+# -----------------------------------------------------------------
+display:
+  sidebar:
+    # Players opt in via /stats sidebar. Flip this to make it on for everyone.
+    enabled-by-default: false
+    refresh-ticks: 40
+    # Stats shown on the sidebar. Order matters.
+    stats:
+    - playtime
+    - blocks_broken
+    - mob_kills
+    - deaths
+    - diamond_mined
+    title: <gradient:#5cddff:#91b9ff><b>JustMC Players Ranks</b></gradient>
+  tab:
+    # Off by default to keep tab-list changes opt-in.
+    enabled: false
+    stat: playtime
+    refresh-seconds: 60
+
+# -----------------------------------------------------------------
+# Discord webhook. Leave url empty to keep the module idle.
+# -----------------------------------------------------------------
+webhooks:
+  discord:
+    url: ''
+    username: JustMC
+    avatar-url: ''
+    achievements: true
+    milestones: true
+    colors:
+      achievement: 16766720 # gold
+      milestone: 6066687 # accent blue
+
+# -----------------------------------------------------------------
+# Embedded web stats page.
+# -----------------------------------------------------------------
+web:
+  # Off by default. Flip on, restart, and browse to http://<host>:<port>/.
+  enabled: true
+  bind: 0.0.0.0
+  port: 34832
+  title: 'JustMC Players Ranks'
+
+# -----------------------------------------------------------------
+# Competitive seasons.
+# -----------------------------------------------------------------
+seasons:
+  # Days between automatic rollovers. 0 disables auto and requires
+  # /nexorastats seasons rollover to advance.
+  duration-days: 30
+  archive-top-n: 25
+  broadcast-on-rollover: true
+
+# -----------------------------------------------------------------
+# Anonymous metrics (bStats).
+# -----------------------------------------------------------------
+metrics:
+  enabled: true
+  server-id: 30ea50a1-af18-42f0-9afa-e28bf4c9ae73
+
+# Modules can be turned off entirely here.
+modules:
+  tracking:
+    enabled: true
+  commands:
+    enabled: true
+  leaderboards:
+    enabled: true
+  periods:
+    enabled: true
+  achievements:
+    enabled: true
+  holograms:
+    enabled: true
+  economy:
+    enabled: true
+  groups:
+    enabled: true
+  worlds:
+    enabled: true
+  history:
+    enabled: true
+  placeholders:
+    enabled: true
+  gui:
+    enabled: true
+  diagnostics:
+    enabled: true
+  milestones:
+    enabled: true
+  seasons:
+    enabled: true
+  sidebar:
+    enabled: true
+  tab-rank:
+    enabled: true
+  welcome:
+    enabled: true
+  custom-stats:
+    enabled: true
+  webhooks:
+    enabled: true
+  web:
+    enabled: true
+  metrics:
+    enabled: true

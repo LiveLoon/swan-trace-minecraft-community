@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 172.18.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1786616130405
+  login: 1786615523027
+money: '0'
+last-account-name: NERUM1
+lastlocation:
+  world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
+  world-name: world
+  x: 3.5
+  y: 63.0
+  z: 10.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
+  world-name: world
+  x: 132.12720516565932
+  y: 64.0
+  z: -94.83969326496778
+  yaw: -157.49911499023438
+  pitch: 12.300371170043945

@@ -1,0 +1,10 @@
+Seen: 1790127317032
+Name: LiveLoon
+World: world
+Max:
+  Res: 64
+  X: 512
+  Z: 512
+RGroup:
+  world_nether: nextgroup
+  world: nextgroup

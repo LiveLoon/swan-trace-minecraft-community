@@ -1,0 +1,39 @@
+teleportenabled: true
+teleportauto: false
+godmode: false
+flymode: false
+muted: false
+jailed: false
+ip-address: 172.18.0.1
+afk: false
+socialspy: false
+npc: false
+powertoolsenabled: true
+accepting-pay: true
+baltop-exempt: false
+timestamps:
+  lastteleport: 0
+  lastheal: 0
+  mute: 0
+  jail: 0
+  onlinejail: 0
+  logout: 1788053040459
+  login: 1788052857668
+money: '0'
+last-account-name: Master_ssz
+lastlocation:
+  world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
+  world-name: world
+  x: 11.5
+  y: 65.0
+  z: 2.5
+  yaw: 0.0
+  pitch: 0.0
+logoutlocation:
+  world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
+  world-name: world
+  x: 3077.5884527091284
+  y: 93.0
+  z: -6811.714227555128
+  yaw: -111.90118408203125
+  pitch: 9.449898719787598
