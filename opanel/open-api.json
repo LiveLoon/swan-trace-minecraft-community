@@ -1,0 +1,10 @@
+{
+  "enabled": true,
+  "interfaces": {
+    "plugins": true,
+    "players": true,
+    "monitor": false,
+    "logs": false,
+    "info": false
+  }
+}

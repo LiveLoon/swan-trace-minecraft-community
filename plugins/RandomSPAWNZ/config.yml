@@ -1,0 +1,94 @@
+# RandomSPAWNZ Configuration
+
+# If true, the plugin will only use worlds specified in the 'allowed-worlds' list
+use-custom-worlds: false
+
+# List of worlds where random spawns can occur (only used if use-custom-worlds is true)
+allowed-worlds:
+  - world
+  - world_nether
+  - world_the_end
+
+# The range in which players will be randomly spawned
+# NOTE: Ignored if border-spawn.enabled is true
+spawn-range:
+  min-x: -9000
+  max-x: 9000
+  min-z: -9000
+  max-z: 9000
+
+# Maximum number of attempts to find a safe location
+max-teleport-attempts: 50
+
+# If true, will only teleport players to safe locations (not in lava, water, etc.)
+safe-teleport: true
+
+# If true, will only teleport players on their first join to the server
+teleport-on-first-join-only: true
+
+# If true, will send a welcome message to the player after teleporting
+send-welcome-message: false
+
+# The welcome message to send to players (supports color codes with &)
+welcome-message: "&6Welcome to the server! &aYou've been randomly spawned!"
+
+# If true, prevents players from spawning on or above barrier blocks
+avoid-barrier-blocks: true
+
+# If true, saves the player's first spawn location as their permanent spawn point
+# NOTE: This only works when teleport-on-first-join-only is set to true
+save-spawn-location: true
+
+
+# If true, waits delay-seconds before teleporting the player.
+delayed-teleport:
+  enabled: false
+  delay-seconds: 10
+  # Message shown to the player while they wait. Use {seconds} as a placeholder.
+  message: "&eYou will be teleported in &6{seconds} &eseconds."
+
+# If true, spawn bounds are derived dynamically from the world border
+# instead of the fixed spawn-range values above.
+border-spawn:
+  enabled: false
+  # Minimum distance in blocks from the border edge where players can spawn.
+  # Prevents spawning right up against the border wall.
+  margin: 50
+
+# If true, ensures new players do not spawn within 'distance' blocks of
+# any currently connected player. 
+min-player-distance:
+  enabled: false
+  distance: 500
+  # Message shown while searching (shown once on the first rejected attempt)
+  retry-message: "&cFinding a safer spawn location away from other players..."
+
+# If true, teleport only happens when the world time is within [min-ticks, max-ticks].
+# If the player joins outside that window, they receive a message and are queued until
+#
+# Minecraft day cycle reference (ticks):
+#   0      = Sunrise
+#   6000   = Noon
+#   12000  = Sunset begins
+#   13000  = Night
+#   18000  = Midnight
+#   23000  = Pre-dawn
+#   24000  = Next sunrise (wraps to 0)
+#
+# Default window 0-6000 covers sunrise to noon, giving players a full morning
+# before nightfall rather than the last few seconds before dusk.
+time-only-teleport:
+  enabled: false
+  min-ticks: 0
+  max-ticks: 6000
+  # Message shown immediately when the player joins outside the window
+  outside-window-message: "&cIt is not the right time of day. You will be teleported when the time is right."
+  # Reminder message sent every minute while the player waits. Use {minutes} as a placeholder.
+  pending-message: "&eYou will be teleported in approximately &6{minutes} &eminute(s)."
+
+# Plays a sound effect when the player is teleported to their random spawn.
+teleport-sound:
+  enabled: true
+  sound: ENTITY_ENDERMAN_TELEPORT
+  volume: 1.0
+  pitch: 1.0

@@ -1,0 +1,10 @@
+# SimpleTPA Configuration
+
+# Time in seconds before a teleport request expires
+request-timeout: 120
+
+# Cooldown in seconds between sending teleport requests
+request-cooldown: 3600
+
+# Whether to allow cross-world teleportation
+allow-cross-world: false
