@@ -187,7 +187,7 @@ modules:
   tab-rank:
     enabled: true
   welcome:
-    enabled: true
+    enabled: false
   custom-stats:
     enabled: true
   webhooks:

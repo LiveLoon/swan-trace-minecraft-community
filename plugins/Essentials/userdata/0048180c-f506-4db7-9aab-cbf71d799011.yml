@@ -17,15 +17,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1790094020579
-  login: 1790091698937
-money: '128808.0'
+  logout: 1790607295575
+  login: 1790602835720
+money: '103678.0'
 last-account-name: gooderan
 logoutlocation:
   world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
   world-name: world
-  x: 1500.300000011921
-  y: 92.0
-  z: 2667.2492216282712
-  yaw: -123.44830322265625
-  pitch: 20.549930572509766
+  x: 1476.699999988079
+  y: 73.28216024279274
+  z: 2683.5633837925716
+  yaw: 171.02935791015625
+  pitch: 22.79991340637207

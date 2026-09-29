@@ -17,15 +17,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1787637216174
-  login: 1787637079776
+  logout: 1790428321820
+  login: 1790428313124
 money: '0'
 last-account-name: .LiveLoon
 logoutlocation:
   world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
   world-name: world
-  x: 5421.36
-  y: 65.0
-  z: -1374.2931
-  yaw: 28.656494140625
-  pitch: 21.611572265625
+  x: 2768.3286
+  y: 64.0
+  z: 411.69998
+  yaw: 137.13134765625
+  pitch: -73.5699462890625

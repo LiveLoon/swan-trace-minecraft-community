@@ -1,0 +1,216 @@
+# BetterMOTDS Configuration
+
+# Language file to use for plugin messages.
+# Available languages are pt_PT (default) and en_US.
+language: pt_PT
+
+normal:
+  # Default icon for normal mode (used if MOTD entry has no icon)
+  # Path is relative to plugins/BetterMOTDS/
+  default-icon: "icons/server-icon.png"
+
+  motd:
+    # Rotation mode: random, sequential, per-day
+    rotation-mode: random
+
+  # MOTD entries. Each entry always has two explicit lines.
+  # If line2 is empty, a blank second line will still be sent.
+  # Optional: set 'icon' per entry to override the default-icon.
+  motds:
+    # 01
+    - line1: "<gradient:#7DD3FC:#38BDF8>鸿迹 Swan Trace</gradient> &8| &7飞鸿踏雪"
+      line2: "&7痕迹不朽 &8| &a公益纯净"
+    # 02
+    - line1: "&b&l鸿迹 Swan Trace &8| &f我的世界社区"
+      line2: "&a欢迎回家 &8| &7QQ群 &f661436985"
+    # 03
+    - line1: "<gradient:#5EEAD4:#38BDF8>飞鸿踏雪，痕迹不朽</gradient>"
+      line2: "&7加入鸿迹 &8| &a留下你的痕迹"
+    # 04
+    - line1: "&6&l鸿迹是公益服 &8| &f纯净版无模组"
+      line2: "&7无商业化 &8| &a自由建筑、红石、探险..."
+    # 05
+    - line1: "&a&l鸿迹服务器 &8| &fJava版 + 基岩版 &7正版验证，跨版本..."
+      line2: "&7和不同平台的朋友一起玩 &8| &bQQ群 &f661436985 &7获取IP"
+    # 06
+    - line1: "&e&l鸿迹服务器 24/7 不间断 &8| &7最大 &f20 &7人"
+      line2: "&7当前在线 &a{online}&7/&a{max} &8| &b欢迎加入我们"
+    # 07
+    - line1: "<gradient:#7DD3FC:#38BDF8>鸿迹服务器存档分布式存储</gradient>"
+      line2: "&7即使腐竹服务器遭到破坏 &8| &a存档依然在每位玩家手中"
+    # 08
+    - line1: "&b&l鸿迹社区共同维护服务器 &8| &7投票决定"
+      line2: "&7插件、配置、规则 &8| &a由你参与"
+    # 09
+    - line1: "&d&l和谐、友善、富贵、博学..."
+      line2: "&7在鸿迹交到这样的朋友"
+    # 10
+    - line1: "&7鸿迹服务器目前版本 &f26.2 &8| &7纯净版"
+      line2: "&7随官方最新版本迭代 &8| &a欢迎再次进入鸿迹 &f(SwanTraceMC)"
+    # 11
+    - line1: "&c&l鸿迹服务器底线 &8| &f不破坏运行，不影响体验"
+      line2: "&7禁止 DDoS、漏洞、刷屏炸服"
+    # 12
+    - line1: "&c&l请勿暴露鸿迹服务器IP &8| &7给非群玩家"
+      line2: "&7保护鸿迹 &8| &a人人有责"
+    # 13
+    - line1: "&e&l鸿迹社区需要你 &8| &f尊重他人，友善交流"
+      line2: "&7禁止辱骂、歧视、政治敏感..."
+    # 14
+    - line1: "&6&l适度红石 &8| &7避免卡服"
+      line2: "&7拒绝 &c超大规模高频红石"
+    # 15
+    - line1: "&c&l我们不知道你为什么选择来到鸿迹社区..."
+      line2: "&7进入QQ群 &f661436985 &7了解详情"
+    # 16
+    - line1: "&e&l禁止实体压迫 &8| &7注意"
+      line2: "&7导致资源耗尽或卡顿，管理员将处理"
+    # 18
+    - line1: "&b&l投票原则 &8| &7鸿迹社区共同维护"
+      line2: "&7配置、插件、管理员、存档 &8| &a由你投票 &7QQ群 &f661436985"
+    # 19
+    - line1: "&a&l鸿迹社区正常玩家 &8| &7均可发起投票"
+      line2: "&7有ID记录且游玩 &f1 &7小时以上"
+    # 20
+    - line1: "&e&l鸿迹社区举报需证据 &8| &7坐标 + 破坏者ID"
+      line2: "&7截图或录屏 &8| &c否则无法受理 &7QQ群 &f661436985"
+    # 22
+    - line1: "&d&l鸿迹 &f(SwanTraceMC) &8| &7一位腐竹，两位管理员"
+      line2: "&7执行决议 &8| &a公开透明"
+    # 23
+    - line1: "&b&l鸿迹管理员选举 &8| &7玩家投票"
+      line2: "&7你能否成为管理员，由大家投票决定 &8| &aQQ群 &f661436985"
+    # 26
+    - line1: "&e&l目前鸿迹服务器设备资源有限"
+      line2: "&7腐竹不能保证 24*7 100% 完美运行 &8| &a感谢理解"
+    # 27
+    - line1: "&6&l加入鸿迹 &f(SwanTraceMC) &8| &7QQ群 &f661436985"
+      line2: "&7验证正版 &8| &a添加服务器地址"
+    # 28
+    - line1: "&b&l为什么鸿迹社区需要正版？"
+      line2: "&7保证身份唯一，方便追溯违规，预防假人攻击 &8| &aQQ群 &f661436985"
+    # 29
+    - line1: "&e&l鸿迹服务器卡顿？ &8| &7低成本性能有限"
+      line2: "&7避免高峰期集中加载新区块"
+    # 30
+    - line1: "&d&l我能当鸿迹管理/OP吗？"
+      line2: "&7大家投票愿意，你将获得权限与责任 &8| &aQQ群 &f661436985"
+    # 31
+    - line1: "&a&l世界边界 &8| &f50000"
+      line2: "&7不会轻易重置 &8| &a版本大更会提前提醒"
+    # 32
+    - line1: "<gradient:#7DD3FC:#38BDF8>腐竹是一个打工人，有自己的生活。</gradient>"
+      line2: "&a鸿迹 Swan Trace MC"
+    # 33
+    - line1: "&b&lSWAN TRACE &8| &7is minecraft community server"
+      line2: "&7鸿迹是我的世界社区服务器"
+    # 34
+    - line1: "&6&l纯净原则 &8| &7无模组、无商业化"
+      line2: "&7玩家离线 &8| &a区块暂停"
+    # 35
+    - line1: "&a&l自由原则 &8| &7只要不破坏运行，不影响游玩，腐竹不干涉"
+      line2: "&7建筑、红石、探险 &8| &a做你想做的事 &7QQ群 &f661436985"
+    # 36
+    - line1: "&e&l如果你是早期加入这个服务器的玩家~"
+      line2: "&7你知道服务器最开始的名字是什么吗？"
+    # 38
+    - line1: "&b&l关注鸿迹社区抖音号 &8| &f43650753863"
+      line2: "&7查看更多 &8| &a服务器日常"
+    # 39
+    - line1: "&d&l鸿迹 &f(SwanTraceMC) &8| &7这个服务器的名字是投票诞生的..."
+      line2: "&7社区欢迎你 &8| &aQQ群 &f661436985"
+    # 40
+    - line1: "&6&l鸿迹社区服务器存档安全 &8| &7分布式存储"
+      line2: "&7希望你可以同步和下载服务器存档，让我们的世界更安全。"
+    # 41
+    - line1: "&a&l越早加入 &8| &7痕迹传播越广"
+      line2: "&7你的痕迹将被广泛保存"
+    # 42
+    - line1: "&b&l插件与配置 &8| &7由投票决定"
+      line2: "&7规则也由社区共同修改 &8| &aQQ群 &f661436985"
+    # 43
+    - line1: "&e&l鸿迹社区正常玩家权利 &8| &7发起投票"
+      line2: "&7有ID记录 &8| &a游玩1小时以上"
+    # 44
+    - line1: "&d&l管理员职责 &8| &7服务社区"
+      line2: "&7入群审核、规则介绍、游玩指导..."
+    # 47
+    - line1: "&a&l鸿迹社区服务器维护与更新 &8| &7群内公告"
+      line2: "&7大版本升级前预告 &8| &a保留旧版备份 &7QQ群 &f661436985"
+    # 48
+    - line1: "&b&l鸿迹社区服务器常见问题 &8| &7查看群公告"
+      line2: "&7正版、卡顿、管理、边界 &8| &aQQ群 &f661436985"
+    # 49
+    - line1: "&e&l鸿迹 Swan Trace &8| &7欢迎回家"
+      line2: "&7飞鸿踏雪 &8| &a痕迹不朽"
+    # 50
+    - line1: "<gradient:#5EEAD4:#38BDF8>留下你的痕迹</gradient> &8| &7就在鸿迹"
+      line2: "&aQQ群 661436985 &7等你加入"
+
+      
+  player-count:
+    online:
+      mode: real # real, static, random, offset
+      value: 0 # Used for static and offset
+      min: 10 # Used for random
+      max: 50 # Used for random
+    max:
+      mode: real # real, static, random, offset
+      value: 100
+      min: 100
+      max: 200
+
+  hover:
+    enabled: true
+    lines:
+      - "&b&lMy Awesome Server"
+      - ""
+      - "&7» &fWebsite: &a&nwww.example.com"
+      - "&7» &fDiscord: &9&ndiscord.gg/example"
+
+  # Legacy icon configuration (still supported as fallback)
+  icon:
+    files:
+      - "server-icon.png"
+
+maintenance:
+  enabled: false
+  reason: ""
+
+  # Default icon for maintenance mode
+  default-icon: "icons/maintenance-icon.png"
+
+  motd:
+    rotation-mode: random
+
+  # MOTD entries for maintenance mode with optional per-MOTD icons
+  motds:
+    - line1: "&cMaintenance Mode"
+      line2: "&7We'll be back soon! &f{reason}"
+      # icon: "icons/maintenance-alt.png"  # Optional: per-MOTD icon
+
+  player-count:
+    online:
+      mode: static
+      value: -1
+    max:
+      mode: static
+      value: -1
+
+  hover:
+    enabled: true
+    lines:
+      - "&c&lMaintenance Mode"
+      - ""
+      - "&7Reason: {reason}"
+      - "&eCheck back later!"
+
+  # Legacy icon configuration (still supported as fallback)
+  icon:
+    files:
+      - "maintenance-icon.png"
+
+  join-block:
+    enabled: true
+    kick-message-key: "maintenance.kick_message"
+    default-reason: ""

@@ -1,0 +1,14 @@
+# English (en_US) language file for BetterMOTDS
+
+command:
+  reload: "&aConfiguration, languages, and icons have been reloaded."
+  usage: "&cUsage: /motd <reload|status>"
+  status:
+    header: "&b&lBetterMOTDS Status"
+    normal: "&fMode: &aNormal"
+    maintenance: "&fMode: &cMaintenance"
+    maintenance_reason: "&fReason: &e{reason}"
+  no_permission: "&cYou do not have permission to use this command."
+
+maintenance:
+  kick_message: "&cThe server is currently in maintenance.\n&eReason: {reason}\n&aPlease try again later."

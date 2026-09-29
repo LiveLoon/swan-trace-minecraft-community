@@ -243,7 +243,63 @@ A：目前边界限制为50000，也不会轻易重置。若未来因版本大�
 以下是本仓库的主要目录和文件说明：
 
 ```
-
+swan-trace-minecraft-community/
+├── docker-compose.yml              # 编排：Minecraft 服务端 + 官网后端
+├── Dockerfile                      # Minecraft 服务端镜像（Arch + JDK26 + 备份 cron）
+├── Dockerfile.springboot           # 官网后端镜像（Spring Boot）
+├── entrypoint.sh                   # MC 容器入口：缺 jar 自动下载，存在则直接启动
+├── README.md                       # 项目说明
+│
+├── paper-26.2-40.jar               # [运行时] 当前使用的 Paper 服务端 jar（不进 Git）
+├── paper-26.2-129.jar              # [运行时] 备用/更新版 Paper jar（不进 Git）
+├── server.jar.vallia               # [运行时] 旧服务端 jar 备份（不进 Git）
+├── swan-trace-mc-server-1.0-SNAPSHOT.jar  # [构建产物] 官网后端 jar（不进 Git）
+│
+├── eula.txt                        # [运行时] Minecraft EULA 同意文件
+├── server.properties               # [运行时] 服务端核心配置（端口、种子、正版验证等）
+├── server-icon.png                 # 服务器列表图标
+│
+├── bukkit.yml                      # [运行时] Bukkit 配置
+├── spigot.yml                      # [运行时] Spigot 配置
+├── paper.yml / config/             # [运行时] Paper 及插件配置
+├── commands.yml                    # [运行时] 命令别名配置
+├── help.yml                        # [运行时] 帮助信息配置
+├── permissions.yml                 # [运行时] 权限配置
+│
+├── ops.json                        # [运行时] OP 名单（含 UUID）
+├── whitelist.json                  # [运行时] 白名单
+├── banned-players.json             # [运行时] 玩家封禁名单
+├── banned-ips.json                 # [运行时] IP 封禁名单
+├── usercache.json                  # [运行时] 玩家名↔UUID 缓存
+├── version_history.json            # [运行时] 版本历史
+│
+├── world/                          # [存档] 主世界（体积大，建议 Git LFS 或单独同步）
+├── world_nether/                   # [存档] 下界
+├── world_the_end/                  # [存档] 末地
+│
+├── plugins/                        # [运行时] 服务端插件及其配置
+├── libraries/                      # [运行时] 服务端依赖库（可重新下载）
+├── versions/                       # [运行时] 版本缓存（可重新下载）
+├── cache/                          # [运行时] 缓存
+├── logs/                           # [运行时] 日志
+├── crash-reports/                  # [运行时] 崩溃报告
+│
+├── backups/                        # [备份] 世界存档的 zstd 归档
+│   ├── world_latest.tar.zst        #   最新备份（每次备份覆盖）
+│   └── world_YYYYMMDD.tar.zst      #   每周一快照
+│
+├── opanel/                         # OPanel 管理平台数据
+├── ssl/                            # [敏感] 证书/私钥（不进 Git）
+├── config/                         # [敏感] 部分插件配置可能含密钥
+│
+├── bash/                           # 自定义脚本目录
+│
+└── swan-trace-mc-official-webside/ # 官网项目（前端 + 后端）
+    ├── backend/                    # Spring Boot 后端源码
+    │   ├── pom.xml
+    │   └── src/
+    ├── frontend/                   # 官网前端源码
+    └── ...
 ```
 
 ---
@@ -252,18 +308,23 @@ A：目前边界限制为50000，也不会轻易重置。若未来因版本大�
 
 ### 环境要求
 
-- Java 21+（推荐使用 OpenJDK 21）
+- Openjdk version "17.0.20.1" 2026-08-18
 - Docker & Docker compose
 - 系统：Linux / Windows / macOS（推荐 Linux 生产环境）
-- 下载 paper-26.2-40.jar 放在 项目的根目录下
 - Apache Maven 3.9.16
-- NodeJs v18.20.8
+- NodeJs v22.18.0
 - Gradle 9.6.1
 
 ### 网站服务端部署
 
 ```
-
+cd swan-trace-mc-official-webside/frontend/web/
+npm install .
+npm run build
+cp dist/ ../../backend/swan-trace-mc-server/src/main/resources/ -rf
+cd ../../../swan-trace-mc-official-webside/backend/swan-trace-mc-server/
+mvn clean package 
+cp target/swan-trace-mc-server-1.0-SNAPSHOT.jar ../../../ -rf
 ```
 
 ### 安卓端编译打包
@@ -279,14 +340,10 @@ A：目前边界限制为50000，也不会轻易重置。若未来因版本大�
 **手动启动**
 
 ```
-
+docker compose up -d --build && docker compose logs -f
 ```
 
-### 服务器存档同步工具
 
-去如下地址下载 agent 客户端。
-
-https://github.com/LiveLoon/world-sync-mc-paper-plugin
 
 ---
 

@@ -17,8 +17,8 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1787137340504
-  login: 1787136979456
+  logout: 1790595009179
+  login: 1790595005967
 money: '0'
 last-account-name: .dlll2210
 lastlocation:
@@ -32,8 +32,8 @@ lastlocation:
 logoutlocation:
   world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
   world-name: world
-  x: 1455.7299
-  y: 64.0
-  z: 2724.8564
-  yaw: -54.65879821777344
-  pitch: 21.02374267578125
+  x: 198.5
+  y: 86.0
+  z: -37.5
+  yaw: 90.0
+  pitch: 0.0

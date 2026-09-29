@@ -17,15 +17,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1790607523664
-  login: 1790604761508
-money: '190979.0'
-last-account-name: Antilunar
+  logout: 1790588949871
+  login: 1790588305694
+money: '0'
+last-account-name: iMeowACG
 logoutlocation:
   world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
   world-name: world
-  x: 5212.293601021928
-  y: 63.0
-  z: -1229.290807214007
-  yaw: 165.30499267578125
-  pitch: 23.85011100769043
+  x: -1220.4159483849596
+  y: 40.0
+  z: -4595.415733562528
+  yaw: -150.30401611328125
+  pitch: 46.61993408203125

@@ -11,10 +11,10 @@ RUN pacman -Sy --noconfirm && \
     pacman -Scc --noconfirm
 
 # 复制 jar 包到容器
-COPY just-mc-server-1.0-SNAPSHOT.jar just-mc-server-1.0-SNAPSHOT.jar
+COPY swan-trace-mc-server-1.0-SNAPSHOT.jar swan-trace-mc-server-1.0-SNAPSHOT.jar
 
 # 暴露 Spring Boot 默认端口
 EXPOSE 2344
 
 # 启动命令
-CMD ["java", "-jar", "just-mc-server-1.0-SNAPSHOT.jar"]
+CMD ["java", "-jar", "./swan-trace-mc-server-1.0-SNAPSHOT.jar"]

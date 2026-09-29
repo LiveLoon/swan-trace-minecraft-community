@@ -650,6 +650,7 @@ Residences:
     BlockSellPrice: 1.0
     Subzones:
       idle:
+        TPLoc: 612.5:210.0:138.5:0.0:0.0
         Messages: 1
         Permissions:
           PlayerFlags:

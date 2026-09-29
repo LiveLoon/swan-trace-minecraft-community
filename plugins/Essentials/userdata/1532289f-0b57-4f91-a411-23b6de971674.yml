@@ -17,15 +17,15 @@ timestamps:
   mute: 0
   jail: 0
   onlinejail: 0
-  logout: 1790005505071
-  login: 1790005148870
+  logout: 1790500015928
+  login: 1790495519600
 money: '2240.0'
 last-account-name: EMFD666
 logoutlocation:
   world: e4a58104-ede1-49e0-b2d0-434d9f3856d4
   world-name: world
-  x: -9464.584057357
-  y: 70.61209647535534
-  z: 7073.233235477861
-  yaw: 123.733642578125
-  pitch: 19.80009651184082
+  x: -9455.5
+  y: 64.0
+  z: 7072.5
+  yaw: -79.49998474121094
+  pitch: -27.900001525878906
