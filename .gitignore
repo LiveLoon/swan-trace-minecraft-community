@@ -224,3 +224,26 @@ temp/
 *.backup
 *.old
 *.orig
+
+# Minecraft runtime
+world/
+world_nether/
+world_the_end/
+logs/
+backups/
+cache/
+libraries/
+versions/
+
+# Minecraft binaries
+*.jar
+
+# archives
+*.zip
+
+# Node
+node_modules/
+dist/
+
+# Tauri
+src-tauri/target/
