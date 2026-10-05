@@ -49,7 +49,7 @@ Global:
     # Allows or denys players to use beds
     bed: true
     # Applies to: Residence
-    # Allows or denys animal boarding in residences
+    # Allow or deny non-player entities from riding vehicles
     boarding: true
     # Applies to: Both
     # Allows or denys players to use brewing stands
@@ -109,7 +109,7 @@ Global:
     # Allow or deny creeper explosions
     creeper: true
     # Applies to: Residence
-    # Allows or denys all entity damage within the residence
+    # Allow or deny damage to players and tamed animals
     damage: true
     # Applies to: Residence
     # Sets day time in residence
@@ -336,7 +336,7 @@ Global:
     # Applies to: Both
     # Allows or denys sheep shear
     shear: true
-    # Applies to: Residence
+    # Applies to: Both
     # Allows or denys shooting projectile in area
     shoot: true
     # Applies to: Residence
@@ -384,7 +384,7 @@ Global:
     # Applies to: Both
     # Allows or denys villager trading in residence
     trade: true
-    # Applies to: Residence
+    # Applies to: Both
     # Allows or denys crop trampling in residence
     trample: true
     # Applies to: Both
@@ -417,6 +417,21 @@ Global:
     # Applies to: Residence
     # Change players walk speed in residence to %1
     wspeed2: true
+    # Applies to: Residence
+    # Allow or deny animal griefing (does not override block/entity-specific flags)
+    animalgriefing: true
+    # Applies to: Residence
+    # Allow or deny derailed hopper minecarts from sucking items from containers
+    minecartsuction: true
+    # Applies to: Residence
+    # Allow or deny monster griefing (does not override block/entity-specific flags)
+    mobgriefing: true
+    # Applies to: Both
+    # Allow or deny players pushing entities(not for player-player)
+    push: true
+    # Applies to: Both
+    # Allow or deny wind_charge explosions
+    windexplode: true
   # This sets GUI items to represent each flag, if not given, then gray wool will be used
   FlagGui:
     admin: BEDROCK
@@ -554,6 +569,11 @@ Global:
     wspeed2: POTION
     safezone: APPLE
     skulk: SCULK_CATALYST
+    animalgriefing: WHEAT
+    minecartsuction: HOPPER_MINECART
+    mobgriefing: BONE
+    push: COBWEB
+    windexplode: WIND_CHARGE
   # These are default flags applied to all residences from any user group.
   ResidenceDefault:
     animalkilling: false
@@ -694,6 +714,10 @@ ItemList:
     # this is the actual list of material names that this list allows or disallows
     # You can look up the material name by item ID in game by typing /res material <id>
     # Alternativly, you can simply use the item ID in the list, but its less descriptive and harder to see what the list allows or dissallows at a glance
+    # Items:
+    # - Apple
+    # - Stone
+    # - Lava_Bucket
     Items:
     - LAVA
     - WATER

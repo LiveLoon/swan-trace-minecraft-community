@@ -6,12 +6,15 @@ Messages:
     LeaveMessage: Now leaving %residence.
     EnterMessage: 欢迎来到gooderan的领地
   3:
-    LeaveMessage: ''
-    EnterMessage: '&e欢迎 &l&a%player&e &e进入 &l&5开拓城快速交通'
+    LeaveMessage: '&c再见，欢迎下次再来'
+    EnterMessage: '&a欢迎&b%player&f来到&6聚集地'
   4:
     LeaveMessage: ''
-    EnterMessage: ''
+    EnterMessage: '&e欢迎 &l&a%player&e &e进入 &l&5开拓城快速交通'
   5:
+    LeaveMessage: ''
+    EnterMessage: ''
+  6:
     LeaveMessage: '&a离开保护范围'
     EnterMessage: '&aWelcome &5%player &a这里是&6新手村'
 Flags:
@@ -410,7 +413,8 @@ Flags:
     leash: false
     pistonprotection: true
     tp: true
-    day: true
+    day: false
+    glow: false
     creeper: false
   19:
     container: false
@@ -928,6 +932,7 @@ Flags:
     explode: false
     skulk: false
     vehicledestroy: false
+    trample: false
     tnt: false
     leash: false
     pistonprotection: true
@@ -937,28 +942,52 @@ Flags:
     container: false
     ignite: false
     damage: false
-    harvest: false
-    shear: false
-    firespread: false
     use: false
-    destroy: false
     riding: false
-    monsters: false
-    pvp: false
     animalkilling: false
     phantomspawn: false
-    fly: false
     hook: false
-    build: false
     explode: false
     skulk: false
     vehicledestroy: false
+    trample: false
+    harvest: false
+    shear: false
+    firespread: false
+    destroy: false
+    monsters: false
+    pvp: false
+    fly: false
+    build: false
     tnt: false
     leash: false
     pistonprotection: true
     tp: false
     creeper: false
   45:
+    container: false
+    ignite: false
+    harvest: false
+    shear: false
+    firespread: false
+    use: false
+    destroy: false
+    riding: false
+    pvp: false
+    animalkilling: false
+    fly: false
+    hook: false
+    build: false
+    explode: false
+    skulk: false
+    vehicledestroy: false
+    trample: false
+    tnt: false
+    leash: false
+    pistonprotection: true
+    tp: false
+    creeper: false
+  46:
     container: false
     ignite: false
     use: true
@@ -987,7 +1016,7 @@ Flags:
     pistonprotection: true
     tp: true
     creeper: false
-  46:
+  47:
     container: true
     ignite: false
     damage: false
@@ -1011,7 +1040,7 @@ Flags:
     pistonprotection: true
     tp: true
     creeper: false
-  47:
+  48:
     container: false
     ignite: false
     harvest: false
@@ -1036,7 +1065,7 @@ Flags:
     tp: false
     day: true
     creeper: false
-  48:
+  49:
     container: false
     ignite: false
     harvest: false
@@ -1281,7 +1310,7 @@ Residences:
       main: -526:-64:-2428:-371:319:-2325
   kfc:
     TPLoc: 1492.09:64.0:2666.57:-0.9:-92.25
-    Messages: 1
+    Messages: 3
     BlockSellPrice: 1.0
     Permissions:
       PlayerFlags:
@@ -1291,20 +1320,7 @@ Residences:
       OwnerLastKnownName: gooderan
     CreatedOn: 1789478824329
     Areas:
-      main: 1435:-64:2530:1621:319:2696
-  kfc-1:
-    TPLoc: 1547.05:64.0:2741.52:13.2:117.75
-    Messages: 1
-    BlockSellPrice: 1.0
-    Permissions:
-      PlayerFlags:
-        0048180c-f506-4db7-9aab-cbf71d799011: 2
-      AreaFlags: 5
-      OwnerUUID: 0048180c-f506-4db7-9aab-cbf71d799011
-      OwnerLastKnownName: gooderan
-    CreatedOn: 1790340588214
-    Areas:
-      main: 1510:-64:2697:1624:319:2762
+      main: 1455:-64:2530:1621:319:2754
   klp:
     TPLoc: 408.73:63.0:787.57:4.5:170.25
     Messages: 1
@@ -1322,7 +1338,7 @@ Residences:
       main: 392:-64:763:428:319:802
   ktc:
     TPLoc: 1423.3:66.0:2711.25:23.55:-100.5
-    Messages: 3
+    Messages: 4
     BlockSellPrice: 1.0
     Permissions:
       PlayerFlags:
@@ -1634,7 +1650,7 @@ Residences:
       main: -1781:-64:53:-1695:319:163
   ovwd_door_soul:
     TPLoc: 10722.43:286.5:3144.71:-6.3:-176.27
-    Messages: 4
+    Messages: 5
     BlockSellPrice: 1.0
     Permissions:
       PlayerFlags:
@@ -1647,7 +1663,7 @@ Residences:
       main: 10704:-64:3119:10735:319:3151
   ovwd_emfd_spawn:
     TPLoc: 196.21:85.0:-24.16:32.7:160.35
-    Messages: 5
+    Messages: 6
     BlockSellPrice: 1.0
     Permissions:
       PlayerFlags:
@@ -1672,7 +1688,7 @@ Residences:
             97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 2
           AreaFlags: 32
           OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
-          OwnerLastKnownName: Art_Oracles
+          OwnerLastKnownName: carm3n06
         CreatedOn: 1790093491069
         Areas:
           idle: 10420:186:-2378:10422:189:-2376
@@ -1690,7 +1706,7 @@ Residences:
         564036bc-b901-438e-a88a-413e1ec46882: 34
       AreaFlags: 36
       OwnerUUID: 97456f7d-12cc-4fe9-80f4-1a6c3b01feb9
-      OwnerLastKnownName: Art_Oracles
+      OwnerLastKnownName: carm3n06
     CreatedOn: 1784766726107
     Areas:
       main: 10400:-64:-2448:10511:319:-2337
@@ -1701,7 +1717,7 @@ Residences:
     Subzones:
       idle:
         TPLoc: 4912.5:184.0:1120.5:0.0:0.0
-        Messages: 4
+        Messages: 5
         Subzones:
           tpset:
             Messages: 1
@@ -1929,6 +1945,7 @@ Residences:
     BlockSellPrice: 1.0
     Permissions:
       PlayerFlags:
+        4ae0c3bd-7029-412f-99be-99f9f9b7ef7d: 4
         564036bc-b901-438e-a88a-413e1ec46882: 4
         07b702fc-16e7-47e4-a3aa-0df68e24c98c: 4
         b58e4c4f-75d2-4fcc-b646-439d2f039211: 2
@@ -1937,7 +1954,7 @@ Residences:
       OwnerLastKnownName: Antilunar
     CreatedOn: 1788525318715
     Areas:
-      main: 5448:-64:-1510:5643:319:-1142
+      main: 5448:-64:-1510:5643:319:-1131
   wheel_feild1:
     TPLoc: 5272.11:63.0:-1164.82:21.6:-140.99
     Messages: 1
@@ -1945,6 +1962,7 @@ Residences:
     Permissions:
       PlayerFlags:
         e6c2968e-5586-4d5c-ab2c-e462044f7835: 4
+        4ae0c3bd-7029-412f-99be-99f9f9b7ef7d: 4
         07b702fc-16e7-47e4-a3aa-0df68e24c98c: 4
         b58e4c4f-75d2-4fcc-b646-439d2f039211: 2
       AreaFlags: 44
@@ -1952,15 +1970,16 @@ Residences:
       OwnerLastKnownName: Antilunar
     CreatedOn: 1790077824339
     Areas:
-      main: 5202:-64:-1328:5447:319:-1061
+      main: 5202:-64:-1328:5447:319:-1011
   wheel_feild2:
     TPLoc: 5246.61:63.0:-1336.02:14.25:63.6
     Messages: 1
     BlockSellPrice: 1.0
     Permissions:
       PlayerFlags:
+        4ae0c3bd-7029-412f-99be-99f9f9b7ef7d: 4
         b58e4c4f-75d2-4fcc-b646-439d2f039211: 2
-      AreaFlags: 5
+      AreaFlags: 45
       OwnerUUID: b58e4c4f-75d2-4fcc-b646-439d2f039211
       OwnerLastKnownName: Antilunar
     CreatedOn: 1790087828103
@@ -1972,13 +1991,40 @@ Residences:
     BlockSellPrice: 1.0
     Permissions:
       PlayerFlags:
+        4ae0c3bd-7029-412f-99be-99f9f9b7ef7d: 4
         b58e4c4f-75d2-4fcc-b646-439d2f039211: 2
-      AreaFlags: 5
+      AreaFlags: 45
       OwnerUUID: b58e4c4f-75d2-4fcc-b646-439d2f039211
       OwnerLastKnownName: Antilunar
     CreatedOn: 1790256612952
     Areas:
-      main: 5168:-64:-1432:5275:319:-1362
+      main: 5168:-64:-1502:5285:319:-1362
+  wheel_feild4:
+    TPLoc: 5405.16:62.94:-1333.08:12.75:147.6
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        b58e4c4f-75d2-4fcc-b646-439d2f039211: 2
+      AreaFlags: 45
+      OwnerUUID: b58e4c4f-75d2-4fcc-b646-439d2f039211
+      OwnerLastKnownName: Antilunar
+    CreatedOn: 1791102735185
+    Areas:
+      main: 5381:-64:-1357:5418:319:-1329
+  wheel_feild5:
+    TPLoc: 5434.01:62.94:-1344.91:10.35:-48.61
+    Messages: 1
+    BlockSellPrice: 1.0
+    Permissions:
+      PlayerFlags:
+        b58e4c4f-75d2-4fcc-b646-439d2f039211: 2
+      AreaFlags: 45
+      OwnerUUID: b58e4c4f-75d2-4fcc-b646-439d2f039211
+      OwnerLastKnownName: Antilunar
+    CreatedOn: 1791118998585
+    Areas:
+      main: 5419:-64:-1365:5447:319:-1329
   wjc:
     TPLoc: -925.32:68.0:1085.59:44.85:-103.25
     Messages: 1
@@ -1989,7 +2035,7 @@ Residences:
         e6c2968e-5586-4d5c-ab2c-e462044f7835: 4
         ef80a196-e3f1-4f27-8a57-1cd569629631: 4
         97456f7d-12cc-4fe9-80f4-1a6c3b01feb9: 1
-      AreaFlags: 45
+      AreaFlags: 46
       OwnerUUID: 0048180c-f506-4db7-9aab-cbf71d799011
       OwnerLastKnownName: gooderan
     CreatedOn: 1788273210738
@@ -2003,7 +2049,7 @@ Residences:
       PlayerFlags:
         07b702fc-16e7-47e4-a3aa-0df68e24c98c: 2
         b58e4c4f-75d2-4fcc-b646-439d2f039211: 4
-      AreaFlags: 46
+      AreaFlags: 47
       OwnerUUID: 07b702fc-16e7-47e4-a3aa-0df68e24c98c
       OwnerLastKnownName: LiveLoon
     CreatedOn: 1787296935351
@@ -2055,7 +2101,7 @@ Residences:
       PlayerFlags:
         00000000-0000-0000-0009-01f679cd1de1: 4
         564036bc-b901-438e-a88a-413e1ec46882: 2
-      AreaFlags: 47
+      AreaFlags: 48
       OwnerUUID: 564036bc-b901-438e-a88a-413e1ec46882
       OwnerLastKnownName: block_ser
     CreatedOn: 1786930420906
@@ -2096,7 +2142,7 @@ Residences:
         2e4361b2-bc47-446f-ac71-aa98f7704dfe: 4
         564036bc-b901-438e-a88a-413e1ec46882: 2
         00000000-0000-0000-0009-01f9e9173d9b: 4
-      AreaFlags: 48
+      AreaFlags: 49
       OwnerUUID: 564036bc-b901-438e-a88a-413e1ec46882
       OwnerLastKnownName: block_ser
     CreatedOn: 1787661448909

@@ -1,0 +1,42 @@
+
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "SwanTraceMCRsyncClient",
+  "version": "0.1.0",
+  "identifier": "org.swantrace.worldsync",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "SwanTraceMCRsyncClient",
+        "width": 1150,
+        "height": 760,
+        "minWidth": 900,
+        "minHeight": 620,
+        "resizable": true,
+        "center": true
+      }
+    ],
+    "security": {
+      "csp": null
+    }
+  },
+  "bundle": {
+    "active": true,
+    "resources": [
+      "resources/rsync/"
+    ],
+    "targets": ["nsis"],
+    "windows": {
+      "nsis": {
+        "displayLanguageSelector": false,
+        "installMode": "currentUser"
+      }
+    }
+  }
+}

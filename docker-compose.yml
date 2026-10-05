@@ -34,14 +34,15 @@ services:
     restart: always
 
 
-  swan-trace-mc-rsync:
+  swan-trace-mc-rsyncd:
+    container_name: swan-trace-mc-rsyncd
     image: mcshaman/rsyncd:latest      # 或使用 jonasal/rsync、stefda/rsync 等镜像
     restart: unless-stopped
     ports:
       - "8873:873"                      # rsync 默认端口
     volumes:
       - ./world:/share                 # 将 ./world 挂载为共享目录
-      - ./rsync/rsyncd.conf:/etc/rsyncd.conf:ro   # 挂载自定义配置
-      - ./rsync/rsyncd.secrets:/etc/rsyncd.secrets:ro  # 如需认证则挂载
+      - ./rsyncd/rsyncd.conf:/etc/rsyncd.conf:ro   # 挂载自定义配置
+      - ./rsyncd/rsyncd.secrets:/etc/rsyncd.secrets:ro  # 如需认证则挂载
     environment:
       - TZ=Asia/Shanghai

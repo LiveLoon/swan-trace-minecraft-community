@@ -202,6 +202,8 @@ Language:
     resetOwnerFlags: '&eReset ownerFlags for &6%1 &eresidence'
     resetAll: '&eReset flags for &6%1 &eresidences'
     resetAllOwnerFlags: '&eReset ownerFlags for &6%1 &eresidences'
+    MirrorNoFlags: '&c&6%1 &cdoesn''t have any flags in &6%2 &cresidence.'
+    MirrorApply: '&eMirrored &6%1 &eflags from &6%2 &eto &6%3&e.'
   Bank:
     NoAccess: '&cYou don''t have bank access.'
     Name: ' &eBank: &6%1'
@@ -1373,6 +1375,34 @@ CommandHelp:
               Description: Change players walk speed in residence to %1
               Info:
               - '&eUsage: &6/res set <residence> wspeed2 true/false/remove'
+            animalgriefing:
+              Translated: animalgriefing
+              Description: Allow or deny animal griefing (does not override block/entity-specific
+                flags)
+              Info:
+              - '&eUsage: &6/res set <residence> animalgriefing true/false/remove'
+            minecartsuction:
+              Translated: minecartsuction
+              Description: Allow or deny derailed hopper minecarts from sucking items
+                from containers
+              Info:
+              - '&eUsage: &6/res set <residence> minecartsuction true/false/remove'
+            mobgriefing:
+              Translated: mobgriefing
+              Description: Allow or deny monster griefing (does not override block/entity-specific
+                flags)
+              Info:
+              - '&eUsage: &6/res set <residence> mobgriefing true/false/remove'
+            push:
+              Translated: push
+              Description: Allow or deny players pushing entities(not for player-player)
+              Info:
+              - '&eUsage: &6/res set/pset <residence> push true/false/remove'
+            windexplode:
+              Translated: windexplode
+              Description: Allow or deny wind_charge explosions
+              Info:
+              - '&eUsage: &6/res set/pset <residence> windexplode true/false/remove'
         give:
           Info:
           - '&eUsage: &6/res give <residence name> [player] <-s>'
@@ -1917,3 +1947,8 @@ CommandHelp:
           - '&eUsage: &6/resload'
           - UNSAFE command, does not save residences first.
           - Loads the residence save file after you have made changes.
+        pmirror:
+          Info:
+          - '&eUsage: &6/res pmirror (residence) [sourcePlayer] [targetPlayer]'
+          - Mirrors flags of one player onto another player in the same residence.
+          Description: Mirrors player flags
